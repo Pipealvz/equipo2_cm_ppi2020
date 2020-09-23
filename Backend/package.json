@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend de Domiaap",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020.git"
+  },
+  "author": "Pipe, Alejo y Juan José",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020/issues"
+  },
+  "homepage": "https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020#readme"
+}
