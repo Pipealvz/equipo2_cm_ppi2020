@@ -5,6 +5,6 @@ app.get('/', function (req, res) {
     res.send('Backend PPI_Equipo 2_cm');
 });
 
-app.listen(5057, function () {
+app.listen(8057, function () {
     console.log("El servidor está en uso.");
 });
