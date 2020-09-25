@@ -2,6 +2,11 @@
 .App {
   text-align: center;
 }
+.Text_info{
+  display: block;
+  text-align: justify;
+  font-size: 15px;
+}
 
 .header_registro{
   margin-left: 10px;
@@ -69,6 +74,14 @@
   background-color: rgb(6, 70, 160);
   color: whitesmoke;
   border-color: white;
+  margin-top: 40px;
+}
+
+#btn_registro{
+  margin-top: 40px;
+  color: rgb(4, 41, 92);
+  border-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 footer{
@@ -150,10 +163,3 @@ footer{
   border-color: whitesmoke;
 }
 
-#btn_registro{
-  margin-top: 10px;
-  background-color: whitesmoke;
-  border-color: rgb(4, 41, 92);
-  color: rgb(4, 41, 92);
-}
-  

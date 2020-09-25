@@ -35,7 +35,9 @@ class Footer extends React.Component {
                                     </div>
                                     <div className="Footer_gmail">
                                         <li className="icon">
+                                            <div className="d-block">
                                             <img src={gmail} /><a href="" >Gmail</a>
+                                            </div>
                                         </li>
                                     </div>
                                 </div>

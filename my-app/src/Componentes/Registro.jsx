@@ -3,16 +3,13 @@ import '../Estilos/App.css';
 import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
+import Navbar from '../Componentes/Navbar';
 
 class Registro extends React.Component {
         render() {
                 return (
                         <div className="App">
-                                <header className="App-header">
-                                        <a className="header_registro" href="/">
-                                                Registrarse
-                                        </a>
-                                </header>
+                                <Navbar/>
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
