@@ -13,14 +13,11 @@
   text-align: left;
 }
 .logo_domiapp{
-  margin-top: 0px;
-  margin-left: 300px;
-  padding: 0px;
-  display: flex;
-  width: 50%;
-  height: 50%;
-  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+  display: block;
   flex-direction: column;
+  justify-content: center;
 }
 
 .App-header {
@@ -29,32 +26,36 @@
   margin-top: 0;
   justify-content: center;
   flex-direction: column;
-  background-color: #178dfc;
+  background-color: rgb(28, 117, 241);
   height: 100px;
   width: auto;
 }
 
-.text-center mt-4{
-  flex-direction: column;
+#Texto_inicio{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   justify-content: center;
+  color: white;
   display: flex;
   margin-top: 10px;
 }
+.inputPassword{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2vmax;
+  color: white;
+}
 
+.inputEmail{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2vmax;
+  color: white;
+}
 .Text_contraseña{
   padding: 10px;
 }
-
-.btn_btn-primary_btn-block{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  margin-top: 50px;
-  justify-content: center;
-  color: white;
-  background-color: rgb(17, 100, 224);
-  width: 50vmin;
-  height: 30px;
-  border-radius: 10px;
+#Bloque_inicio{
+  background-color: rgb(28, 117, 241);
+  margin-top: 4%;
+  text-align: left;
 }
 
 .row{
@@ -62,5 +63,97 @@
   display: block;
   justify-items: center;
   justify-content: center;
-  
 }
+
+#btn_inicio{
+  background-color: rgb(6, 70, 160);
+  color: whitesmoke;
+  border-color: white;
+}
+
+footer{
+  background-color: rgb(4, 41, 92);
+  color: whitesmoke;
+  width: 100%;
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-body{
+  display: flex;
+}
+
+.col  {
+  max-width: 400px;
+  font-size: 11px;
+  justify-content: center;
+}
+
+.col h1{
+  font-size: 20px;
+}
+
+.col p{
+  text-align: justify;
+}
+
+.info_block{
+  display: block;
+  width: 100%;
+}
+
+.col2{
+  font-size: 10px;
+  display: block;
+  width: 50%; 
+}
+
+.icon{
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  width: 120%;
+}
+
+.col2 h1{
+  font-size: 20px;
+}
+
+.section_images_footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Footer_facebook{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+.Footer_git{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+.Footer_gmail{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+#btn_registro{
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-color: rgb(4, 41, 92);
+  color: rgb(4, 41, 92);
+}
+  
