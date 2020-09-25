@@ -1,0 +1,66 @@
+
+.App {
+  text-align: center;
+}
+
+.header_registro{
+  margin-left: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4vmin;
+  text-decoration: none;
+  text-align: left;
+}
+.logo_domiapp{
+  margin-top: 0px;
+  margin-left: 300px;
+  padding: 0px;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #178dfc;
+  height: 100px;
+  width: auto;
+}
+
+.text-center mt-4{
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.Text_contraseña{
+  padding: 10px;
+}
+
+.btn_btn-primary_btn-block{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 50px;
+  justify-content: center;
+  color: white;
+  background-color: rgb(17, 100, 224);
+  width: 50vmin;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.row{
+  margin-top: 30px;
+  display: block;
+  justify-items: center;
+  justify-content: center;
+  
+}
