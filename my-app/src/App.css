@@ -5,26 +5,27 @@
 .App-logo {
   height: auto;
   display: flex;
-margin-top: 40;
+  margin-top: 40;
   pointer-events: none;
 }
+
 .header_registro{
   color: white;
   text-transform: uppercase;
   font-size: 3vmin;
-  align-items: left;
+  text-align: left;
+  text-decoration: none;
+  
 }
 
 .App-header {
   display: flex;
   padding: 0.5vmin;
   margin-top: 0;
-  align-items: left;
   justify-content: center;
   flex-direction: column;
   background-color: #178dfc;
   height: 7vmin;
-
 }
 
 .App-link {

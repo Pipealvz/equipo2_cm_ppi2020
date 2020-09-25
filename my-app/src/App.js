@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function App () {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="header_registro">
+        <a className="header_registro" href="/">
           Registrarse
-        </p>
+        </a>
       </header>
     </div>
   );
