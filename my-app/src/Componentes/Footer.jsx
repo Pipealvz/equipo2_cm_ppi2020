@@ -17,7 +17,7 @@ class Footer extends React.Component {
                                     <h1>Más información</h1>
                                     <p className="Text_info">DomiApp es un proyecto creado por 3 estudiantes
                                     de la Institución Educativa Concejo de Medellín, con el fin de ayudar a los más dispacaditados
-                                                provisionando un ayuda en el sistema de entrega de medicamentos.</p><a href="https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020">¡Click para ir a gitHub!</a>
+                                                provisionando un ayuda en el sistema de entrega de medicamentos. <a href="https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020">¡Click para ir a gitHub!</a> </p>
                                 </div>
                             </div>
                             <div className="col2">

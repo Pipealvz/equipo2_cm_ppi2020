@@ -9,7 +9,7 @@ class Registro extends React.Component {
         render() {
                 return (
                         <div className="App">
-                                <Navbar/>
+                                <Navbar />
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
@@ -21,14 +21,14 @@ class Registro extends React.Component {
                                                         <br />
                                                         <form >
                                                                 <div className="form-group">
-                                                                        <label className="inputEmail">Usuario</label>
+                                                                        <label className="inputEmail">Correo</label>
                                                                         <input
                                                                                 type="email"
                                                                                 name="email"
                                                                                 id="inputEmail"
                                                                                 className="form-control"
                                                                                 required
-                                                                                placeholder="Nombre de usuario"
+                                                                                placeholder="Correo"
                                                                         />
                                                                 </div>
                                                                 <div className="form-group ">
@@ -56,10 +56,9 @@ class Registro extends React.Component {
                                                 <div className="col"></div>
                                         </div>
                                 </div>
-                                <Footer/>
+                                <Footer />
                         </div>
                 );
         }
 }
-
 export default Registro;
