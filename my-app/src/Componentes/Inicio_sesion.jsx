@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-class Registro extends React.Component {
+class Inicio_sesion extends React.Component {
         render() {
                 return (
                         <div className="App">
@@ -17,11 +17,11 @@ class Registro extends React.Component {
                                         <div className="row">
                                                 <div className="col"></div>
                                                 <div className="col-8" id="Bloque_inicio">
-                                                        <h1 className="text-center mt-4" id="Texto_inicio">Comprobar</h1>
+                                                        <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <br />
                                                         <form >
                                                                 <div className="form-group">
-                                                                        <label className="inputEmail">Si</label>
+                                                                        <label className="inputEmail">Correo</label>
                                                                         <input
                                                                                 type="email"
                                                                                 name="email"
@@ -32,7 +32,7 @@ class Registro extends React.Component {
                                                                         />
                                                                 </div>
                                                                 <div className="form-group ">
-                                                                        <label className="inputPassword">Cambió</label>
+                                                                        <label className="inputPassword">Contraseña</label>
                                                                         <input
                                                                                 type="password"
                                                                                 name="contrasena"
@@ -43,10 +43,10 @@ class Registro extends React.Component {
                                                                         />
                                                                 </div>
                                                                 <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">
-                                                                        <strong>De</strong>
+                                                                        <strong>Iniciar Sesión</strong>
                                                                 </button>
                                                                 <button className=" btn btn-primary btn-block" type="submit" id="btn_registro">
-                                                                        <strong>Ventana</strong>
+                                                                        <strong>Registrarse</strong>
                                                                 </button>
                                                         </form>
                                                         <br />
@@ -61,4 +61,4 @@ class Registro extends React.Component {
                 );
         }
 }
-export default Registro;
+export default Inicio_sesion;

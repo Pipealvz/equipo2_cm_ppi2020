@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Registro from './Componentes/Registro.jsx';
+import Inicio_sesion from './Componentes/Inicio_sesion.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Registro />
+    <Inicio_sesion />
   </React.StrictMode>,
   document.getElementById('root')
 );
