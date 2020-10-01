@@ -7,60 +7,76 @@
   text-align: justify;
   font-size: 15px;
 }
+/*BLOQUE NAVBAR*/
 
 .header_registro{
-  margin-left: 10px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
+  width: 125px;
   text-transform: uppercase;
-  font-size: 4vmin;
   text-decoration: none;
   text-align: left;
 }
 .logo_domiapp{
   margin-top: 10px;
-  padding: 5px;
+  padding: 5px; 
   display: block;
   flex-direction: column;
   justify-content: center;
 }
 
-.App-header {
+.Navbar{
   display: flex;
   padding: 0;
   margin-top: 0;
   justify-content: center;
   flex-direction: column;
   background-color: rgb(28, 117, 241);
-  height: 100px;
+  height: 50px;
   width: auto;
 }
+/*BLOQUE INICIO SESIÓN*/
 
 #Texto_inicio{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
-  color: white;
+  color: rgb(28, 117, 241);
   display: flex;
   margin-top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.inputPassword{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.input_Password{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2vmax;
-  color: white;
+  color: black;
+  font-weight: 500;
+}
+#inputPassword{
+  border-radius: 15px;
+  background-color: rgb(213, 228, 250);
 }
 
-.inputEmail{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.input_Email{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2vmax;
-  color: white;
+  color: black;
+  font-weight: 500;
 }
+#inputEmail{
+  border-radius: 15px;
+  background-color: rgb(213, 228, 250);
+}
+
 .Text_contraseña{
   padding: 10px;
 }
 #Bloque_inicio{
-  background-color: rgb(28, 117, 241);
+  border-radius: 25px;
   margin-top: 4%;
   text-align: left;
+  border-style: solid;
+  border-color: rgb(28, 117, 241);
 }
 
 .row{
@@ -71,9 +87,9 @@
 }
 
 #btn_inicio{
-  background-color: rgb(6, 70, 160);
+  background-color:  rgb(28, 117, 241);
+  border-radius: 15px;
   color: whitesmoke;
-  border-color: white;
   margin-top: 40px;
 }
 
@@ -83,6 +99,12 @@
   border-color: whitesmoke;
   background-color: whitesmoke;
 }
+
+.link-registro{
+  margin-top: 10px;
+  font-size: 15px;
+}
+/*BLOQUE FOOTER*/
 
 footer{
   background-color: rgb(4, 41, 92);

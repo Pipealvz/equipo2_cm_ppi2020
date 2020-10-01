@@ -4,13 +4,12 @@ import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import Navbar_efecto from '../Componentes/efecto-nabvar';
 
 class Inicio_sesion extends React.Component {
         render() {
                 return (
                         <div className="App">
-                                <Navbar_efecto titulo="Iniciar Sesión"/>
+                                <Navbar titulo="Iniciar Sesión" />
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
@@ -22,7 +21,7 @@ class Inicio_sesion extends React.Component {
                                                         <br />
                                                         <form >
                                                                 <div className="form-group">
-                                                                        <label className="inputEmail">Correo</label>
+                                                                        <label className="input_Email">Correo</label>
                                                                         <input
                                                                                 type="email"
                                                                                 name="email"
@@ -33,12 +32,12 @@ class Inicio_sesion extends React.Component {
                                                                         />
                                                                 </div>
                                                                 <div className="form-group ">
-                                                                        <label className="inputPassword">Contraseña</label>
+                                                                        <label className="input_Password">Contraseña</label>
                                                                         <input
                                                                                 type="password"
                                                                                 name="contrasena"
                                                                                 id="inputPassword"
-                                                                                className="form-control"        
+                                                                                className="form-control"
                                                                                 required
                                                                                 placeholder="Contraseña"
                                                                         />
@@ -46,9 +45,9 @@ class Inicio_sesion extends React.Component {
                                                                 <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">
                                                                         <strong>Iniciar Sesión</strong>
                                                                 </button>
-                                                                <button className=" btn btn-primary btn-block" type="submit" id="btn_registro">
-                                                                        <strong>Registrarse</strong>
-                                                                </button>
+                                                                <p className="link-registro">¿No tienes cuenta?<a href="">
+                                                                       ¡¡Registrate!!</a>
+                                                                </p>
                                                         </form>
                                                         <br />
                                                         <h6></h6>

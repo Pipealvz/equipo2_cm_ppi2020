@@ -7,11 +7,10 @@
     border-style: solid;
 }
 
-
 .inputEmail{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2vmax;
-    color:  rgb(28, 117, 241);
+    color:  white;
 }
 #input_Email{
     border-radius: 15px;
@@ -21,7 +20,7 @@
 .inputPassword{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2vmax;
-    color:  rgb(28, 117, 241);
+    color:  white;
 }
 #input_Password{
     border-radius: 15px;
