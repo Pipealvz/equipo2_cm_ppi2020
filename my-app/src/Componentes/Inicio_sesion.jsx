@@ -4,12 +4,13 @@ import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import Navbar_efecto from '../Componentes/efecto-nabvar';
 
 class Inicio_sesion extends React.Component {
         render() {
                 return (
                         <div className="App">
-                                <Navbar titulo="Iniciar sesión" />
+                                <Navbar_efecto titulo="Iniciar Sesión"/>
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
