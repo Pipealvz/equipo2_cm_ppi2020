@@ -6,10 +6,10 @@ class Navbar extends React.Component {
         return (
             <div className='Navbar'>
                 <div className='container-fluid'>
-                    <header className="App-header">
-                                        <a className="header_registro" href="/">
-                                                Registro
-                                        </a>    {this.props.nabvar}
+                    <header titutlo="" className="App-header">
+                            <a className="header_registro" href="/">
+                                {this.props.titulo}
+                            </a>
                     </header>
                     <a className='Navbar_brand' href='/'>
                     </a>

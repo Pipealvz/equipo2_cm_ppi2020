@@ -9,7 +9,7 @@ class Inicio_sesion extends React.Component {
         render() {
                 return (
                         <div className="App">
-                                <Navbar titulo="Iniciar sesión" />
+                                <Navbar titulo="Registro" />
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
