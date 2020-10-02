@@ -46,7 +46,7 @@ class Inicio_sesion extends React.Component {
                                                                         <strong>Iniciar Sesión</strong>
                                                                 </button>
                                                                 <p className="link-registro">¿No tienes cuenta?<a href="">
-                                                                       ¡¡Registrate!!</a>
+                                                                        ¡¡Registrate!!</a>
                                                                 </p>
                                                         </form>
                                                         <br />

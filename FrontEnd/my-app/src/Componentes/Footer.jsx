@@ -25,7 +25,7 @@ class Footer extends React.Component {
                                 <div className="section_images_footer">
                                     <div className="Footer_git">
                                         <li className="icon">
-                                            <img src={gitHub} /><a id="footer_github_texto" href ="https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020" >gitHub</a>
+                                            <img src={gitHub} /><a id="footer_github_texto" href="https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020" >gitHub</a>
                                         </li>
                                     </div>
                                     <div className="Footer_facebook">
@@ -36,7 +36,7 @@ class Footer extends React.Component {
                                     <div className="Footer_gmail">
                                         <li className="icon">
                                             <div className="d-block">
-                                            <img src={gmail} /><a id="footer_gmail_texto" href="" >Gmail</a>
+                                                <img src={gmail} /><a id="footer_gmail_texto" href="" >Gmail</a>
                                             </div>
                                         </li>
                                     </div>

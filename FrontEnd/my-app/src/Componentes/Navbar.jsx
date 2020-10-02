@@ -6,7 +6,7 @@ class Navbar extends React.Component {
         return (
             <div className='Navbar'>
                 <div className='container-fluid'> {this.props.transform}
-                    <header titulo="" className="header_registro">Navbar
+                    <header titulo="" className="header_registro">
                         {this.props.titulo}
                     </header>
                 </div>

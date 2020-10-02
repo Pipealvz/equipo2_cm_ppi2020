@@ -37,7 +37,7 @@ class Inicio_sesion extends React.Component {
                                                                                 type="password"
                                                                                 name="contrasena"
                                                                                 id="inputPassword"
-                                                                                className="form-control"        
+                                                                                className="form-control"
                                                                                 required
                                                                                 placeholder="Contraseña"
                                                                         />
