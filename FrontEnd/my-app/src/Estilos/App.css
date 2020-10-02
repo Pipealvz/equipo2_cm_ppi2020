@@ -1,0 +1,207 @@
+
+.App {
+  text-align: center;
+}
+.Text_info{
+  display: block;
+  text-align: justify;
+  font-size: 15px;
+}
+/*BLOQUE NAVBAR*/
+
+.header_registro{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  width: 125px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+}
+.logo_domiapp{
+  margin-top: 10px;
+  padding: 5px; 
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Navbar{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(28, 117, 241);
+  height: 50px;
+  width: auto;
+}
+/*BLOQUE INICIO SESIÓN*/
+
+#Texto_inicio{
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  color: rgb(28, 117, 241);
+  display: flex;
+  margin-top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.input_Password{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+  color: black;
+  font-weight: 500;
+}
+#inputPassword{
+  border-radius: 15px;
+  background-color: rgb(213, 228, 250);
+}
+
+.input_Email{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+  color: black;
+  font-weight: 500;
+}
+#inputEmail{
+  border-radius: 15px;
+  background-color: rgb(213, 228, 250);
+}
+
+.Text_contraseña{
+  padding: 10px;
+}
+#Bloque_inicio{
+  border-radius: 25px;
+  margin-top: 4%;
+  text-align: left;
+  border-style: solid;
+  border-color: rgb(28, 117, 241);
+}
+
+.row{
+  margin-top: 30px;
+  display: block;
+  justify-items: center;
+  justify-content: center;
+}
+
+#btn_inicio{
+  background-color:  rgb(28, 117, 241);
+  border-radius: 15px;
+  color: whitesmoke;
+  margin-top: 40px;
+}
+
+#btn_registro{
+  margin-top: 40px;
+  color: rgb(4, 41, 92);
+  border-color: whitesmoke;
+  background-color: whitesmoke;
+}
+
+.link-registro{
+  margin-top: 10px;
+  font-size: 15px;
+}
+/*BLOQUE FOOTER*/
+
+footer{
+  background-color: rgb(4, 41, 92);
+  color: whitesmoke;
+  width: 100%;
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-body{
+  display: flex;
+}
+
+.col  {
+  max-width: 400px;
+  font-size: 11px;
+  justify-content: center;
+}
+
+.col h1{
+  font-size: 20px;
+}
+
+.col p{
+  text-align: justify;
+}
+
+.info_block{
+  display: block;
+  width: 100%;
+}
+
+.col2{
+  font-size: 10px;
+  display: block;
+  width: 50%; 
+}
+
+.icon{
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  width: 120%;
+}
+
+.col2 h1{
+  font-size: 20px;
+}
+
+.section_images_footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Footer_facebook{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+.Footer_git{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+.Footer_gmail{
+  margin-left: 10px;
+  display: inline-block;
+  align-content: center;
+  border-color: whitesmoke;
+}
+
+#footer_gmail_texto{
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+#footer_facebook_texto{
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+
+#footer_github_texto{
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
