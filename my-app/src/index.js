@@ -5,7 +5,7 @@ import Registro from './Componentes/Registro';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Inicio_sesion />
+    <Registro />
   </React.StrictMode>,
   document.getElementById('root')
 );

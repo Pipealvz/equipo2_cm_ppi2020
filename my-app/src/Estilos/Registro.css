@@ -8,9 +8,10 @@
 }
 
 .inputEmail{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vmax;
-    color:  white;
+    color: black;
+    font-weight: 500;
 }
 #input_Email{
     border-radius: 15px;
@@ -18,9 +19,10 @@
 }
 
 .inputPassword{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vmax;
-    color:  white;
+    color: black;
+    font-weight: 500;
 }
 #input_Password{
     border-radius: 15px;
@@ -28,9 +30,10 @@
 }
 
 .inputName{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vmax;
-    color:  rgb(28, 117, 241);
+    color: black;
+    font-weight: 500;
 }
 #input_Name{
     border-radius: 15px;
@@ -47,19 +50,13 @@
 
 .Link_sesion{
     margin-top: 20px;
-    display: flex;
-    justify-content: left;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-.sub_sesion{
-    color: white;
-    margin-left: 10px;
+    color: black;
 }
 
 #btn_registrar{
-    margin-top: 40px;
-    color: white;
-    background-color: rgb(4, 41, 92);
+    background-color:  rgb(28, 117, 241);
     border-radius: 15px;
+    color: whitesmoke;
+    margin-top: 40px;
 }

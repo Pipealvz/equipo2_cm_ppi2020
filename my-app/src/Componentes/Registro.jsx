@@ -56,7 +56,7 @@ class Registro extends React.Component {
                                     <strong>Registrarse</strong>
                                 </button>
                                 <div className="Link_sesion">
-                                    <p>¿Ya tienes cuenta?<a href="" className="sub_sesion">
+                                    <p>¿Ya tienes cuenta?<a href="" className="">
                                         Inicia sesión
                                 </a>
                                     </p>
