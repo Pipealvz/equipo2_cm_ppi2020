@@ -1,0 +1,11 @@
+/*BLOQUE SOLICITUD*/
+#Bloque_solicitud{
+    background-color: white;
+    color: rgb(28, 117, 241);
+    border-style: solid;
+    margin-top: 40px;
+    border-radius: 15px;
+    height: 90vmin;
+    margin-right: 30px;
+    display: inline-block;
+}
