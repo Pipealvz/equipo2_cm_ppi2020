@@ -21,7 +21,7 @@ class Solicitud extends React.Component {
                                         <div className="row">
                                                 <div className="col-12">
                                                         <div className="mt-1 col-10" id="Bloque_solicitud">
-                                                                <h1 className="text-center mt-4" id="Texto_inicio">Solicitudes</h1>
+                                                                <h1 className="text-center mt-4" id="Texto_inicio">Ajustes</h1>
                                                                 <br />
                                                                 <br/>
                                                                 <div class="row mt-0 btn-group" id="btn-farm">

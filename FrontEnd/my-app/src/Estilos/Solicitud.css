@@ -2,10 +2,49 @@
 #Bloque_solicitud{
     background-color: white;
     color: rgb(28, 117, 241);
-    border-style: solid;
-    margin-top: 40px;
+    border-style: solid;    
     border-radius: 15px;
-    height: 90vmin;
-    margin-right: 30px;
+    height: auto;
     display: inline-block;
+    border-width: 1px;
+}
+/*BTN-FORM-BLOCK*/
+#btn-farm{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1px;
+}
+
+#btn-text-farm{
+    border: 1px;
+    border-style: solid;
+}
+
+#text-box{
+    text-align: left;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+#text-add-form{
+    color: black;
+    text-align: left;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-farm{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1px;
+}
+.a-add-form{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+#btn_solicitar{
+    margin-top: 10px;
 }

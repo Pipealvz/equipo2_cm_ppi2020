@@ -4,19 +4,19 @@ import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 class Inicio_sesion extends React.Component {
-        render() {
+        render(){
                 return (
                         <div className="App">
-                                <Navbar titulo="Iniciar Sesión" />
                                 <div className="container vh-100 mt-4">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
                                         </div>
                                         <div className="row">
                                                 <div className="col"></div>
-                                                <div className="col-8" id="Bloque_inicio">
+                                                <div className="col-9" id="Bloque_inicio">
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <br />
                                                         <form >
@@ -42,12 +42,13 @@ class Inicio_sesion extends React.Component {
                                                                                 placeholder="Contraseña"
                                                                         />
                                                                 </div>
-                                                                <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">
-                                                                        <strong>Iniciar Sesión</strong>
+                                                                <Link id="link" to="/Solicitud"> 
+                                                                <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">                                                                                                                                           
+                                                                 <strong>Iniciar Sesión</strong>                                                       
                                                                 </button>
-                                                                <p className="link-registro">¿No tienes cuenta?<a href="">
-                                                                        ¡¡Registrate!!</a>
-                                                                </p>
+                                                                </Link>                                                                   
+                                                                <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro"> ¡¡Registrate!!</Link>
+                                                                </span>                                                               
                                                         </form>
                                                         <br />
                                                         <h6></h6>

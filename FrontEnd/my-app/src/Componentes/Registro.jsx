@@ -4,19 +4,19 @@ import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 class Registro extends React.Component {
     render() {
         return (
             <div className="App">
-                <Navbar titulo="Registro" />
-                <div className="container vh-100 mt-4">
+                <div className="container vh-100 mt-5">
                     <div className="logo_domiapp">
                         <img src={Logo_domiapp} alt="" className="img-fluid" />
                     </div>
                     <div className="row">
                         <div className="col"></div>
-                        <div className="col-8" id="Bloque_registro">
-                            <h1 className="text-center mt-4" id="Texto_inicio">Registro</h1>
+                        <div className="col-9" id="Bloque_registro">
+                            <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <br />
                             <form >
                                 <div className="form-group">
@@ -53,12 +53,11 @@ class Registro extends React.Component {
                                     />
                                 </div>
                                 <button className=" btn btn-primary btn-block" type="submit" id="btn_registrar">
-                                    <strong>Registrarse</strong>
+                                    <strong>Crear cuenta</strong>
                                 </button>
                                 <div className="Link_sesion">
-                                    <p>¿Ya tienes cuenta?<a href="" className="">
-                                        Inicia sesión
-                                </a>
+                                    <p>¿Ya tienes cuenta? <Link id="link" to="/">
+                                    ¡¡Inicia Sesión!!</Link>
                                     </p>
                                 </div>
                             </form>
@@ -66,7 +65,7 @@ class Registro extends React.Component {
                             <h6></h6>
                             <br />
                         </div>
-                        <div className="col"></div>
+                        <div className="col"></div> 
                     </div>
                 </div>
                 <Footer />

@@ -1,0 +1,146 @@
+/*BLOQUE-ALL-FOOTER*/
+#section-info{
+  text-align: left;
+}
+/*BLOQUE FOOTER*/
+footer{
+    background-color: rgb(4, 41, 92);
+    color: whitesmoke;
+    width: auto;
+  }
+.container-body{
+    display: flex;
+  }
+  
+.col{
+    width: auto;
+    font-size: smaller;
+    justify-content: center;
+  }
+  
+.col h1{
+    font-size: 20px;
+  }
+  
+.col p{
+    text-align: justify;
+  }
+  
+.info_block{
+    display: block;
+    width: auto;
+    text-align: center;
+  }
+  
+/*SECTION_CONTACT*/  
+#img_block{
+    font-size: small;
+    display: flex;
+    width: auto; 
+    text-align: center;
+    justify-content: right;
+  }
+  
+.icon{
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    width: auto;
+  }
+
+.col2 h1{
+    font-size: 20px;
+  }
+  
+  .section_images_footer{
+    margin-top: 3%;
+    display: flex;
+    width: auto;
+    list-style: none;
+    height: 5vmax;
+  }
+@media(max-width: 600px){
+  .section_images_footer{
+    display: block;
+    width: 100px;
+  }
+}
+  /*DISCORD_SECTION*/
+.Footer_discord{
+    margin-left: 10px;
+    align-content: center;
+    display: flex;
+  }
+#footer_discord_texto{
+    color: whitesmoke;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+  }
+#footer_discord_texto:hover{
+    text-decoration: none;
+}
+.Footer_discord:hover{
+  border-radius: 15px;
+  background-color: rgba(159, 165, 240, 0.37);
+}
+
+  /*GITHUB_SECTION*/
+.Footer_git{
+    margin-left: 10px;
+    align-content: center;
+    display: flex;
+  }
+#footer_github_texto{
+    color: whitesmoke;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    align-self: center;
+  }
+#footer_github_texto:hover{
+    text-decoration: none;
+  }
+.Footer_git:hover{
+    border-radius: 15px;
+    background-color: rgba(159, 165, 240, 0.37);
+  }
+
+  /*GMAIL_SECTION*/
+.Footer_gmail{
+    margin-left: 10px;
+    align-content: center;
+    display: flex;
+  }
+  
+.footer_gmail_texto{
+    color: whitesmoke;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+.footer_gmail_texto:hover{
+    text-decoration: none;
+  }
+  .footer_gmail_texto:focus{
+    outline: none;
+  }
+.Footer_gmail:hover{
+    border-radius: 15px;
+    background-color: rgba(159, 165, 240, 0.37);
+  }
+.btn-styles-footer{
+  background-color: transparent;
+  border: none;
+}
+.btn-styles-footer:focus{
+  outline: none;
+}
+  /*DERECHOS-RESERVADOS_SECTION*/
+#derechos_reservados{
+    text-align: end;
+    width: auto;
+  }
