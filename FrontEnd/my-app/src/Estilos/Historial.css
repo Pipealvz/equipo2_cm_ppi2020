@@ -1,28 +1,21 @@
+
 #Bloque_Historial{
     height: auto;
     display: inline-block;
     border-width: 1px;
-}
-
-#block-his{
-    background-color: rgb(213, 228, 250);;
+    background-color: rgba(200, 220, 250, 0.753);;
     color: rgb(28, 117, 241);
     border-style: solid;    
     border-radius: 15px;
-    height: auto;
-    display: inline-block;
-    border-width: 1px;
     text-align: left;
+    justify-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#text-his{
-    display: block;
-    opacity: 0,5;
-    text-align: justify;
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: gray;
-}
 #img-form{
     margin-bottom: 10px;
 }
+
+@media(min-width: 700px){
+
+  }

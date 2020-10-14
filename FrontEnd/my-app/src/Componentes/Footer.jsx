@@ -1,8 +1,10 @@
+/*IMPORT-REACT*/
 import React from 'react';
+/*IMPORT-BOOTSTRAP*/
+import 'bootstrap/dist/css/bootstrap.min.css';
 import gitHub from '../Images_proyectos/git_icon.png';
 import gmail from '../Images_proyectos/gmail_icon.png';
 import discord from '../Images_proyectos/discord_icon.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Estilos/Footer.css';
 
 class Footer extends React.Component {
@@ -14,7 +16,7 @@ class Footer extends React.Component {
                         <div className="col container-body" id="footer-all">
                             <div className="col-6" id="section-info">
                                 <div className="info_block">
-                                    <h1>Más información sobre el proyecto</h1>
+                                    <h1>Más información</h1>
                                     <p className="Text_info">DomiApp es un proyecto creado por 3 estudiantes
                                     de la Institución Educativa Concejo de Medellín, con el fin de ayudar a los más discapacitados
                                                 provisionando un ayuda en el sistema de entrega de medicamentos.</p>

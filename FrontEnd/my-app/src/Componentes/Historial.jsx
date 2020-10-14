@@ -1,5 +1,5 @@
 /*IMPORT-REACT*/
-import React from 'react';
+import React from "react";
 import '../Estilos/Historial.css';
 import { Link } from 'react-router-dom';
 /*IMPORT-BOOTSTRAP*/
@@ -7,11 +7,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
 import Footer from './Footer';
 import Navbar from './Navbar-btn';
+import Card from "../Componentes/card";
+import data from "../data/card.json";
 /*IMPORT-IMAGES*/
 import img_form from '../Images_proyectos/img-form-sura.jpg';
 
 
 class Historial extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            data: data
+        };
+    }
     render() {
         return (
             <div className="App">
@@ -20,26 +28,17 @@ class Historial extends React.Component {
                 <div className="container vh-100">
                     <div className="row">
                         <div className="col-12">
-                            <div className="mt-1 col-12" id="Bloque_Historial">
+                            <div className="" id="">
                                 <h1 className="text-center mt-4" id="Texto_inicio">Historial</h1>
-                                <br />
-                                <div className="container">
-                                    <div className="row col-12" id="block-his">
-                                        <div className="row mt-1 ml-2">
-                                            <span id="text-his">Fecha: 21/08/2019</span>
-                                            <br />
-                                        </div>
-                                        <div className="row mt-1 ml-2">
-                                            <p id="text-his">Farmacia: Athena SS</p>
-                                            <br />
-                                        </div>
-                                        <div className="row mt-1 ml-2 col">
-                                            <img id="img-form" src={img_form} className="img-fluid"/>
-                                        </div>
+                                <div className="mt-1 col-12" id="Bloque_Historial">
+                                    <br />
+                                    <div className="col-lg-12 col-md-12 col-sm-6">
+                                    <Card className="text" time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
                                     </div>
+                                    <h6>
+                                    </h6>
+                                    <br />
                                 </div>
-                                <h6></h6>
-                                <br />
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,41 @@
+.card-img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-text{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+  @media(max-width: 300px){
+    .card-img {
+      width: 30rem;
+      height: 20rem;
+    }
+
+  }
+  @media(min-width: 600px){
+    .card-img {
+      width: 25rem;
+      height: 15rem;
+    }
+
+  }
+  @media(min-width: 700px){
+    .card-img {
+      width: 25rem;
+      height: 15rem;
+    }
+
+  }
+  @media(min-width: 1000px){
+    .card-img {
+      width: 50rem;
+      height: 30rem;
+    }
+    .card-text{
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: gray;
+  }
+  }

@@ -124,12 +124,131 @@
   text-decoration: none;
 }
 
-/*MEDIA-QUERY*
-@media (max-width: 600px) {
-  .text-btn{
-           justify-content: flex-end;
-           color: white;
-           display: flex;
-           text-align: center;
+/*MEDIA-QUERY*/
+@media (max-width: 1000px) {
+  .header_global{
+    height: 20vmax;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: auto;
+    text-transform: uppercase;
+    text-decoration: none;
   }
-  */
+  
+#Navbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(28, 117, 241);
+    height: 40px;
+    width: auto;
+    margin-top: auto;
+}
+/*BUTTONS-ZONE*/
+#btn-zone{
+  display: flex;
+  justify-content: center;
+}
+#navbarEfect{
+  justify-content: center;
+}
+#btn-burger{
+  border: transparent;
+}
+#btn-burger:focus{
+  outline: none;
+  border-style: solid, black;
+}
+/*BTN-SOL*/
+.btn-sol{
+  background-color: transparent;
+  border: transparent;
+  width: 6vmax;
+  height: auto;
+}
+.btn-sol:hover{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.btn-sol:focus{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+  outline: none;
+}
+/*BTN-AJUS*/
+.btn-aju{
+  background-color: transparent;
+  border: transparent;
+  width: 6vmax;
+  height: auto;
+}
+.btn-aju:hover{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.btn-aju:focus{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+  outline: none;
+}
+/*BTN-FAV*/
+.btn-fav{
+  background-color: transparent;
+  border: transparent;
+  width: 6vmax;
+  height: auto;
+}
+.btn-fav:hover{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.btn-fav:focus{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+  outline: none;
+}
+/*BTN-HIS*/
+.btn-his{
+  background-color: transparent;
+  border: transparent;
+  width: 6vmax;
+  height: auto;
+}
+.btn-his:hover{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.btn-his:focus{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+  outline: none;
+}
+/*BTN-NOT*/
+.btn-not{
+  background-color: transparent;
+  border: transparent;
+  width: 6vmax;
+  height: auto;
+}
+.btn-not:hover{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+}
+.btn-not:focus{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.589);
+  outline: none;
+}
+.text-btn{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  text-align: center;
+}
+.Link-btn:hover{
+  text-decoration: none;
+}
+  }

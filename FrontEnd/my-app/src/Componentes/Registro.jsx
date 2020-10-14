@@ -1,10 +1,14 @@
+/*IMPORT-REACT*/
 import React from 'react';
-import '../Estilos/Registro.css';
-import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+/*IMPORT-COMPONENTS*/
 import Footer from './Footer';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
+import '../Estilos/Registro.css';
+import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
+/*IMPORT-BOOTSTRAP*/
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Registro extends React.Component {
     render() {
         return (
