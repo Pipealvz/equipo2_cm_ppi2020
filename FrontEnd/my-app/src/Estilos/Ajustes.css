@@ -56,3 +56,13 @@
 #btn_solicitar{
     margin-top: 10px;
 }
+
+#text-drop{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+
+#dropmenu{
+    border: 1px solid black;
+}

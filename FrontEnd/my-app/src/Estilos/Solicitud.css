@@ -17,8 +17,7 @@
 }
 
 #btn-text-farm{
-    border: 1px;
-    border-style: solid;
+    border: 1px solid;
 }
 
 #text-box{
@@ -31,7 +30,7 @@
 #text-add-form{
     color: black;
     text-align: left;
-    font-size: smaller;
+    font-size: small;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -40,12 +39,16 @@
     justify-content: flex-start;
     margin-left: 1px;
 }
-.a-add-form{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -20px;
-}
 
 #btn_solicitar{
     margin-top: 10px;
+}
+
+#btn-form{
+    background-color: transparent;
+    border: none;
+}
+
+#btn-form:focus{
+    outline: none;
 }

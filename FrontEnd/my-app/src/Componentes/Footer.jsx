@@ -13,7 +13,7 @@ class Footer extends React.Component {
             <footer>
                 <div className="container">
                     <div className="row">
-                        <div className="justify-content-between col container-body" id="footer-all">
+                        <div className="d-flex col">
                             <div className="col-6" id="section-info">
                                 <div className="info_block">
                                     <h1>Más información</h1>
@@ -21,7 +21,8 @@ class Footer extends React.Component {
                                     de la Institución Educativa Concejo de Medellín, con el fin de ayudar a los más discapacitados
                                                 provisionando un ayuda en el sistema de entrega de medicamentos.</p>
                                 </div>
-                            Copyright © DomiApp 2020
+                                <hr className="m-0"/>
+                            © DomiApp 2020
                             </div>
                             <div className="col-6" id="img_block">                             
                                 <div className="section_images_footer">

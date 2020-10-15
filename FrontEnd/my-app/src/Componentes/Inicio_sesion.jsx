@@ -1,10 +1,13 @@
+/*IMPORT-REACT*/
 import React from 'react';
-import '../Estilos/App.css';
-import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
-import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
+/*IMPORT-BOOTSTRAP*/
+import 'bootstrap/dist/css/bootstrap.min.css';
+/*IMPORT-COMPONENTS*/
+import '../Estilos/App.css';
+import Footer from './Footer';
+/*IMPORT-IMAGES*/
+import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 
 class Inicio_sesion extends React.Component {
         render(){
@@ -18,6 +21,7 @@ class Inicio_sesion extends React.Component {
                                                 <div className="col"></div>
                                                 <div className="col-9" id="Bloque_inicio">
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
+                                                        <hr/>
                                                         <br />
                                                         <form >
                                                                 <div className="form-group">

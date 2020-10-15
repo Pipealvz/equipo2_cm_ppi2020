@@ -28,6 +28,8 @@ class Solicitud extends React.Component {
                                 <div className="col-12">
                                     <div className="" id="">
                                         <h1 className="text-center mt-4" id="Texto_inicio">Favoritos</h1>
+                                        <hr/>
+                                        <br/>
                                         <div className="mt-1 col-12" id="Bloque_Historial">
                                             <br />
                                             <div className="col-lg-12 col-md-12 col-sm-6">

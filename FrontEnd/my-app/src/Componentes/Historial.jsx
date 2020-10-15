@@ -23,15 +23,27 @@ class Historial extends React.Component {
             <div className="App">
                 <Navbar id="header_global" />
                 <br />
-                <div className="container vh-100">
+                <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <div className="" id="">
                                 <h1 className="text-center mt-4" id="Texto_inicio">Historial</h1>
-                                <div className="mt-1 col-12" id="Bloque_Historial">
+                                <hr/>
+                                <br/>
+                                <div className="mt-1 col-12 col-lg-10" id="Bloque_Historial">
                                     <br />
                                     <div className="col-lg-12 col-md-12 col-sm-6">
                                     <Card className="text" time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
+                                    </div>
+                                    <h6>
+                                    </h6>
+                                    <br />
+                                </div>
+                                <hr/>
+                                <div className="mt-1 col-12 col-lg-10" id="Bloque_Historial">
+                                    <br />
+                                    <div className="col-lg-12 col-md-12 col-sm-6">
+                                    <Card className="text" time="Fecha: 24/01/2018" farm="Farmacia: Los rosales" data={this.state.data} />
                                     </div>
                                     <h6>
                                     </h6>

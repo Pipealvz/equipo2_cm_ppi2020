@@ -32,6 +32,7 @@ class Navbar_btn extends React.Component {
               </div>
               </NavLink>
             </li>
+            <hr className="m-0"/>
             <li class="col-sm-2 col-md-2 nav-item nav-link">
             <NavLink to="/Ajustes" className="Link-btn">
               <button className="btn-aju">
@@ -42,6 +43,7 @@ class Navbar_btn extends React.Component {
               </div>
               </NavLink>
             </li>
+            <hr className="m-0"/>
             <li class="col-sm-2 col-md-2 nav-item nav-link">
             <NavLink to="/Favoritos" className="Link-btn">
               <button className="btn-fav">
@@ -52,6 +54,7 @@ class Navbar_btn extends React.Component {
               </div>
               </NavLink>
             </li>
+            <hr className="m-0"/>
             <li class="col-sm-2 col-md-2 nav-item nav-link">
             <NavLink to="/Historial" className="Link-btn">
               <button className="btn-his">
@@ -62,6 +65,7 @@ class Navbar_btn extends React.Component {
                 </div>
                 </NavLink>
             </li>
+            <hr className="m-0"/>
             <li className="col-sm-2 col-md-2 nav-item nav-link">
             <NavLink to="/Notificaciones" className="Link-btn">
               <button className="btn-not">

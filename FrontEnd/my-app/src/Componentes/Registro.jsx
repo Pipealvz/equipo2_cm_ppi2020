@@ -21,6 +21,7 @@ class Registro extends React.Component {
                         <div className="col"></div>
                         <div className="col-9" id="Bloque_registro">
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
+                            <hr/>
                             <br />
                             <form >
                                 <div className="form-group">
