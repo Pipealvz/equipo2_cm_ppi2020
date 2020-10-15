@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap-practice</title>
+</head>
+
+<body>
+    <style>
+        #container {
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #row-one {
+            height: 100px;
+            border: 2px dotted green;
+        }
+
+        .container-fluid {
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        #img{
+            height: 120px;
+            width: 200px;
+        }
+    </style>
+    <div class="container-fluid">
+        <p>align-vertical↓</p>
+        <div class="row align-items-start" id="container">
+            <div class="col align-self-end bg-primary text-white">align-self-end</div>
+            <div class="col align-self-start bg-dark text-white">align-self-start</div>
+            <div class="col align-self-center bg-danger text-white">align-self-center</div>
+        </div>
+        <hr>
+        <p>align-horizontal↓</p>
+        <div class="row justify-content-center" id="container">
+            <div class="col-4 align-self-center bg-primary text-white">align-self-center / row justify-content-center
+            </div>
+        </div>
+        <hr />
+        <p>beetwen ↓</p>
+        <div class="row justify-content-between" id="container">
+            <div class="col-4 align-self-center bg-primary text-white">align-self-center / justify-content-between</div>
+            <div class="col-4 align-self-center bg-dark text-white">align-self-center / justify-content-between</div>
+        </div>
+        <hr>
+        <p>around ↓</p>
+        <div class="row justify-content-around" id="container">
+            <div class="col-4 align-self-center bg-primary text-white">align-self-center / justify-content-around</div>
+            <div class="col-4 align-self-center bg-dark text-white">align-self-center / justify-content-around</div>
+        </div>
+        <hr>
+        <p>ALL-ITEMS ↓</p>
+
+        <div id="container-fluid">
+            <div class="mt-1 row justify-content-around">
+                <div class="col-4 align-self-center bg-primary text-white">align-self-center / justify-content-around
+                </div>
+                <div class="col-4 align-self-center bg-dark text-white">align-self-center / justify-content-around</div>
+            </div>
+            <div class="mt-5 row justify-content-between">
+                <div class="col-4 align-self-center bg-primary text-white">align-self-center / justify-content-between
+                </div>
+                <div class="col-4 align-self-center bg-dark text-white">align-self-center / justify-content-between
+                </div>
+            </div>
+            <div class="mt-5 row justify-content-center">
+                <div class="col-4 align-self-center bg-primary text-white">justify-content-center</div>
+                <div class="col-4 align-self-center bg-dark text-white">justify-content-center</div>
+            </div>
+            <div class="mt-5 row" id="row-one">
+                <div class="col-3 align-self-start bg-primary text-white">align-self-start</div>
+                <div class="col-3 align-self-center bg-dark text-white">align-self-center</div>
+                <div class="col-3 align-self-center bg-danger text-white">align-self-center</div>
+                <div class="col-3 align-self-end bg-success text-white">align-self-end</div>
+            </div>
+            <div class="mt-5 row justify-content-end" id="row-one">
+                <div class="col-4 align-self-end bg-primary text-white">align-items-end / justify-content-end</div>
+                <div class="col-4 align-self-start bg-dark text-white">align-items-start / justify-content-end</div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="mt-5 container-fluid text-info bg-white" id="container">
+        <div class="row justify-content-center">
+            ¡¡Práctica bootstrap pipe!!
+            </div>
+            <img class="" src="https://i2.wp.com/velozityweb.com/blog/wp-content/uploads/2019/02/bootstrap-4-logo.jpg?fit=1400%2C800" id="img">
+    </div>
+</footer>
+</html>

@@ -10,8 +10,6 @@ import Navbar from './Navbar-btn';
 import Card from "../Componentes/card";
 import data from "../data/card.json";
 /*IMPORT-IMAGES*/
-import img_form from '../Images_proyectos/img-form-sura.jpg';
-
 
 class Historial extends React.Component {
     constructor() {

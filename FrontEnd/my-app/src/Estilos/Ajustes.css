@@ -1,5 +1,4 @@
-/*BLOQUE SOLICITUD*/
-#Bloque_solicitud{
+#Bloque_ajustes{
     background-color: white;
     color: rgb(28, 117, 241);
     border-style: solid;    
@@ -9,11 +8,18 @@
     border-width: 1px;
     justify-content: center;
 }
+
 /*BTN-FORM-BLOCK*/
-#btn-farm{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 1px;
+.btn-edit{
+    background-color: transparent;
+    border: none;
+}
+.btn-edit:hover{
+    background-color: rgba(169, 191, 221, 0.788);
+    border-radius: 5px;
+}
+.btn-edit:focus{
+    outline: none;
 }
 
 #btn-text-farm{
@@ -25,7 +31,8 @@
     text-align: left;
     font-size: small;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: gray;
+    opacity: 10px;
 }
 
 #text-add-form{

@@ -7,6 +7,7 @@ import Solicitud from '../Componentes/Solicitud';
 import Favoritos from '../Componentes/Favoritos';
 import Historial from '../Componentes/Historial';
 import Ajustes from '../Componentes/Ajustes';
+import Notificaciones from '../Componentes/Notificaciones';
 
 function Rutas() {
     return (
@@ -18,6 +19,7 @@ function Rutas() {
                 <Route exact path="/Ajustes" component={Ajustes} />
                 <Route exact path="/Favoritos" component={Favoritos} />
                 <Route exact path="/Historial" component={Historial} />
+                <Route exact path="/Notificaciones" component={Notificaciones} />
             </Switch>
         </BrowserRouter>
     )

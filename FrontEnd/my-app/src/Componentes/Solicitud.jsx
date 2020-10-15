@@ -24,8 +24,8 @@ class Solicitud extends React.Component {
                                                                 <h1 className="text-center mt-4" id="Texto_inicio">Solicitudes</h1>
                                                                 <br />
                                                                 <br/>
-                                                                <div class="row mt-0 btn-group" id="btn-farm">
-                                                                        <input type="summit" readonly="readonly" className="col-8 btn btn-primary bg-light" placeholder="Seleccionar farmacia" id="text-box"></input>
+                                                                <div class=" row justify-content-center mt-0 btn-group" id="btn-farm">
+                                                                        <input type="summit" readonly="readonly" className="col-9 btn btn-primary bg-light" placeholder="Seleccionar farmacia" id="text-box"></input>
                                                                         <button type="button" className="col-2 btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                                 <span class="sr-only"></span>
                                                                         </button>
@@ -36,8 +36,8 @@ class Solicitud extends React.Component {
                                                                         </div>
                                                                 </div>
                                                                 <br/>
-                                                                <div class="row btn-group" id="btn-farm">
-                                                                        <input type="summit" readonly="readonly" className="col-8 btn btn-primary bg-light" placeholder="Tipo de documento" id="text-box"></input>
+                                                                <div class="row justify-content-center btn-group" id="btn-farm">
+                                                                        <input type="summit" readonly="readonly" className="col-9 btn btn-primary bg-light" placeholder="Tipo de documento" id="text-box"></input>
                                                                         <button type="button" className="col-2 btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                                 <span class="sr-only"></span>
                                                                         </button>
@@ -47,16 +47,16 @@ class Solicitud extends React.Component {
                                                                         </div>
                                                                 </div>
                                                                 <br/>
-                                                                <div class="row btn-group" id="btn-farm">
-                                                                        <input type="int" className="col-10 btn btn-primary bg-light" placeholder="Número de documento" id="text-box" required></input>
+                                                                <div class="row justify-content-center btn-group" id="btn-farm">
+                                                                        <input type="int" className="col-11 btn btn-primary bg-light" placeholder="Número de documento" id="text-box" required></input>
                                                                 </div>
                                                                 <br/>
-                                                                <div class="row btn-group" id="input-farm">
-                                                                        <p id="text-add-form">Adjunte la fórmula </p><a className="a-add-form"><img className="icon col-4" src = {btn_form} /></a>
+                                                                <div class="row justify-content-center btn-group" id="input-farm">
+                                                                        <p className="align-items-start" id="text-add-form">Adjunte la fórmula </p><a className="a-add-form"><img className="icon col-4" src = {btn_form} /></a>
                                                                 </div>
                                                                 <br/>
-                                                                <div>
-                                                                <button className=" btn btn-primary btn-block" type="submit" id="btn_solicitar">                                                                                                                                           
+                                                                <div className="row justify-content-center mt-0 ">
+                                                                <button className="col-lg-7 col-sm-4 btn btn-primary btn-block" type="submit" id="btn_solicitar">                                                                                                                                           
                                                                  <strong>Solicitar</strong>                                                       
                                                                 </button>
                                                                 </div>

@@ -14,7 +14,7 @@ export default class Card extends Component {
                         </div>
                         <div className="card m-0">
                             <img
-                                className="card-img-top card-img"
+                                className="card-img-fluid card-img"
                                 src={element.img}
                                 alt="Img-form"
                             />
