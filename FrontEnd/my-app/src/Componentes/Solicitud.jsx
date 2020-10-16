@@ -18,9 +18,9 @@ class Solicitud extends React.Component {
                                 <Navbar id="header_global" />
                                 <br />
                                 <div className="container">
-                                        <div className="row">
+                                        <div className="row vh-100">
                                                 <div className="col-12">
-                                                        <div className="mt-1 col-10" id="Bloque_solicitud">
+                                                        <div className="mt-1 col-12 col-lg-10" id="Bloque_solicitud">
                                                                 <h1 className="text-center mt-4" id="Texto_inicio">Solicitudes</h1>
                                                                 <hr />
                                                                 <br />

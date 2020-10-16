@@ -19,7 +19,7 @@ class Solicitud extends React.Component {
                                 <div className="container vh-100">
                                         <div className="row justify-content-center">
                                                 <div className="col-12">
-                                                        <div className="mt-1 col-10" id="Bloque_ajustes">
+                                                        <div className="mt-1 col-12 col-lg-10" id="Bloque_ajustes">
                                                                 <h1 className="text-center mt-4" id="Texto_inicio">Ajustes</h1>
                                                                 <hr />
                                                                 <br />
