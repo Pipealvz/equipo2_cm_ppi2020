@@ -13,13 +13,12 @@ class Inicio_sesion extends React.Component {
         render(){
                 return (
                         <div className="App">
-                                <div className="container vh-100">
+                                <div className="container vh-100" id="container">
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
                                         </div>
-                                        <div className="row">
-                                                <div className="col"></div>
-                                                <div className="col-9" id="Bloque_inicio">
+                                        <div className="row justify-content-center">
+                                                <div className="col-12 col-lg-6" id="Bloque_inicio">
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <hr/>
                                                         <br />
@@ -58,11 +57,13 @@ class Inicio_sesion extends React.Component {
                                                         <h6></h6>
                                                         <br />
                                                 </div>
-                                                <div className="col"></div>
                                         </div>
-                                </div>
-                                <Footer />
+                                </div>   
+                                <div className="row-fluid">
+                                <Footer/>   
+                                </div>                         
                         </div>
+                        
                 );
         }
 }

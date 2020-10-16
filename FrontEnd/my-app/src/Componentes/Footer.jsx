@@ -24,7 +24,7 @@ class Footer extends React.Component {
                                 <hr className="m-0"/>
                             © DomiApp 2020
                             </div>
-                            <div className="col-6" id="img_block">                             
+                            <div className="col-6" id="img_block">
                                 <div className="section_images_footer">
                                     <div className="Footer_git">
                                         <li className="icon">

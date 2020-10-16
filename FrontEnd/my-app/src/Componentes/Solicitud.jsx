@@ -17,7 +17,7 @@ class Solicitud extends React.Component {
                         <div className="App">
                                 <Navbar id="header_global" />
                                 <br />
-                                <div className="container vh-100">
+                                <div className="container">
                                         <div className="row">
                                                 <div className="col-12">
                                                         <div className="mt-1 col-10" id="Bloque_solicitud">
@@ -59,7 +59,7 @@ class Solicitud extends React.Component {
                                                                 </div>
                                                                 <br />
                                                                 <div className="row justify-content-center mt-0 ">
-                                                                        <button className="col-lg-7 col-sm-4 btn btn-primary btn-block" type="submit" id="btn_solicitar">
+                                                                        <button className="col-lg-7 col-8 btn btn-primary btn-block" type="submit" id="btn_solicitar">
                                                                                 <strong>Solicitar</strong>
                                                                         </button>
                                                                 </div>
@@ -70,7 +70,9 @@ class Solicitud extends React.Component {
                                                 </div>
                                         </div>
                                 </div>
-                                <Footer />
+                                <div className="row-fluid">
+                                <Footer/>   
+                                </div>  
                         </div>
                 );
         }

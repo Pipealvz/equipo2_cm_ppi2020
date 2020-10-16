@@ -52,3 +52,7 @@
 #btn-form:focus{
     outline: none;
 }
+
+#dropmenu{
+    float: left;
+}
