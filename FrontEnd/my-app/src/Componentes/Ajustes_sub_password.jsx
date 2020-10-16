@@ -9,7 +9,7 @@ import Navbar from './Navbar-btn';
 import '../Estilos/Ajustes.css';
 /*IMPORT-IMAGES*/
 
-class Ajustes_sub_name extends React.Component {
+class Ajustes_sub_pass extends React.Component {
         render() {
                 return (
                         <div className="App">
@@ -19,19 +19,19 @@ class Ajustes_sub_name extends React.Component {
                                         <div className="row justify-content-center">
                                                 <div className="col-12">
                                                         <div className="mt-1 col-10" id="Bloque_ajustes">
-                                                                <h1 className="text-left mt-4" id="Texto_inicio_sub">Cambiar nombre</h1>
+                                                                <h1 className="text-left mt-4" id="Texto_inicio_sub">Cambiar contraseña</h1>
                                                                 <hr />
                                                                 <br />                                                                
                                                                 <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Nombre actual: Androly-San </text>
+                                                                        <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box" placeholder="Ingrese contraseña actual:"></input>
                                                                 </div>
                                                                 <br />
                                                                 <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <input type="text" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex standard-secondary" id="text-box" placeholder="Nuevo nombre:" required></input>
+                                                                        <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex standard-secondary" id="text-box" placeholder="Nueva contraseña:" required></input>
                                                                 </div>
                                                                 <br />
                                                                 <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box" placeholder="Contraseña:" required></input>
+                                                                <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box" placeholder="Verificar nueva contraseña:" required></input>
                                                                 </div>
                                                                 <br />
                                                                 <div className="row justify-content-center mt-0">
@@ -53,4 +53,4 @@ class Ajustes_sub_name extends React.Component {
                 );
         }
 }
-export default Ajustes_sub_name;
+export default Ajustes_sub_pass;

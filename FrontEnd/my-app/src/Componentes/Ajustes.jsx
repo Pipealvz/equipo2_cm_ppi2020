@@ -28,11 +28,11 @@ class Solicitud extends React.Component {
                                                                 </div>
                                                                 <br />
                                                                 <div class="mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Contraseña: *********<button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></text>
+                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Contraseña: *********<Link to="/Ajustes/Editar_contraseña"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
                                                                 </div>
                                                                 <br />
                                                                 <div class="mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Correo: Andy@correo.com <button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></text>
+                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Correo: Andy@correo.com <Link to="/Ajustes/Editar_correo"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
                                                                 </div>
                                                                 <br />
                                                                 <div class="mt-2 row justify-content-center btn-group" id="btn-farm">

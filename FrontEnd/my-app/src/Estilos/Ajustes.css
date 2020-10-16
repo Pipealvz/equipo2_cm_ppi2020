@@ -10,6 +10,12 @@
 }
 
 /*BTN-FORM-BLOCK*/
+#Texto_inicio_sub{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: large;
+}
 .btn-edit{
     background-color: transparent;
     border: none;

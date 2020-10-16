@@ -11,6 +11,8 @@ import Ajustes from '../Componentes/Ajustes';
 import Notificaciones from '../Componentes/Notificaciones';
 /*IMPORT-SUB-COMPONENT*/
 import Ajustes_sub_name from '../Componentes/Ajustes_sub_name';
+import Ajustes_sub_pass from '../Componentes/Ajustes_sub_password';
+import Ajustes_sub_mail from '../Componentes/Ajustes_sub_mail';
 
 function Rutas() {
     return (
@@ -23,7 +25,10 @@ function Rutas() {
                 <Route exact path="/Favoritos" component={Favoritos} />
                 <Route exact path="/Historial" component={Historial} />
                 <Route exact path="/Notificaciones" component={Notificaciones} />
+                
                 <Route exact path="/Ajustes/Editar_nombre" component={Ajustes_sub_name} />
+                <Route exact path="/Ajustes/Editar_correo" component={Ajustes_sub_mail} />
+                <Route exact path="/Ajustes/Editar_contraseña" component={Ajustes_sub_pass} />
             </Switch>
         </BrowserRouter>
     )
