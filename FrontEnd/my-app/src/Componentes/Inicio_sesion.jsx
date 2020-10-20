@@ -59,11 +59,8 @@ class Inicio_sesion extends React.Component {
                                                 </div>
                                         </div>
                                 </div>   
-                                <div className="row-fluid">
-                                <Footer/>   
-                                </div>                         
-                        </div>
-                        
+                                <Footer/>                         
+                        </div>  
                 );
         }
 }
