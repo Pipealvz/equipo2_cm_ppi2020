@@ -12,19 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020.git"
   },
-  "author": "Pipe, Alejo y Juan",
+  "author": "Pipe, Alejo y Juan José",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020/issues"
   },
   "homepage": "https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3",
     "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-router-dom": "^5.2.0"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

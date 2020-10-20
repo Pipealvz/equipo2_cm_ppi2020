@@ -1,2 +1,6 @@
+  
 language = "nodejs"
-run = "npm run dev"
+# run = "cd frontend-mi-proyecto-ppi && npm i"
+# run = "cd frontend-mi-proyecto-ppi && npm start"
+# run = "cd BackEnd && npm i"
+ run = "cd BackEnd && npm run dev"
