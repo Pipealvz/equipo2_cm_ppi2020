@@ -24,30 +24,24 @@ class Solicitud extends React.Component {
                                                                 <h1 className="text-center mt-4" id="Texto_inicio">Solicitudes</h1>
                                                                 <hr />
                                                                 <br />
-                                                                <div class=" row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <input type="summit" readonly="readonly" className="col-9 col-lg-10 btn btn-primary bg-light" placeholder="Seleccionar farmacia" id="text-box"></input>
-                                                                        <button type="button" className="col-2 col-lg-1 btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                <span class="sr-only"></span>
-                                                                        </button>
-                                                                        <div class="text-left dropdown-menu" id="dropmenu">
-                                                                                <a className="dropdown-item">Farmacia Rosales</a>
-                                                                                <hr className="m-0"/>
-                                                                                <a className="dropdown-item">Farmacia Athena SS</a>
-                                                                                <hr className="m-0"/>
-                                                                                <a className="dropdown-item" >Farmacia D2</a>
-                                                                        </div>
+                                                                <div class="row justify-content-center mt-0 btn-group" id="btn-farm">               
+                                                                        <select class="text-left col-9 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
+                                                                        <option className="sub-item">Farmacia Rosales</option>
+                                                                                <hr className=""/>
+                                                                                <option className="sub-item">Farmacia Athena SS</option>
+                                                                                <hr className=""/>
+                                                                                <option className="sub-item" >Farmacia D2</option>
+                                                                        </select>
                                                                 </div>
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="btn-farm">
-                                                                        <input type="summit" readonly="readonly" className="col-9 col-lg-10 btn btn-primary bg-light" placeholder="Tipo de documento" id="text-box"></input>
-                                                                        <button type="button" className="col-2 col-lg-1 btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                <span class="sr-only"></span>
-                                                                        </button>
-                                                                        <div class="text-left dropdown-menu" id="dropmenu">
-                                                                                <a className="dropdown-item">T.I.</a>
-                                                                                <hr className="m-0"/>
-                                                                                <a className="dropdown-item">C.C</a>
-                                                                        </div>
+                                                                <select class="text-left col-9 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
+                                                                        <option className="sub-item">TI</option>
+                                                                                <hr className=""/>
+                                                                        <option className="sub-item">Farmacia Athena SS</option>
+                                                                                <hr className=""/>
+                                                                        <option className="sub-item" >Farmacia D2</option>
+                                                                        </select>
                                                                 </div>
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="btn-farm">
@@ -70,9 +64,7 @@ class Solicitud extends React.Component {
                                                 </div>
                                         </div>
                                 </div>
-                                <div className="row-fluid">
                                 <Footer/>   
-                                </div>  
                         </div>
                 );
         }
