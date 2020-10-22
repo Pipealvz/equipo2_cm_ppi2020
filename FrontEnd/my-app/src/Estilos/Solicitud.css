@@ -52,3 +52,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
 }
+.sub-item:hover{
+    box-shadow: red;
+}

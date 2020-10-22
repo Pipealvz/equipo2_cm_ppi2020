@@ -30,7 +30,7 @@ class Solicitud extends React.Component {
                                                                                 <hr className=""/>
                                                                                 <option className="sub-item">Farmacia Athena SS</option>
                                                                                 <hr className=""/>
-                                                                                <option className="sub-item" >Farmacia D2</option>
+                                                                                <option className="sub-item" >Farmacia D2</option> 
                                                                         </select>
                                                                 </div>
                                                                 <br />
