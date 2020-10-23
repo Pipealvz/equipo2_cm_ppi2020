@@ -16,7 +16,7 @@ class Solicitud extends React.Component {
                         <div className="App">
                                 <Navbar id="header_global" />
                                 <br />
-                                <div className="container  vh-100bg-dark col-lg-12">
+                                <div className="container vh-100 col-12 col-lg-12 bg-dark">
                                         <div className="row justify-content-center">
                                                 <div className="col-12 col-lg-10">
                                                         <div className="col-12 col-lg-10" id="Bloque_solicitud">
@@ -43,8 +43,8 @@ class Solicitud extends React.Component {
                                                                         <input type="int" className="col-11 btn btn-primary bg-light" placeholder="Número de documento" id="text-box" required></input>
                                                                 </div>
                                                                 <br />
-                                                                <div class="row justify-content-center btn-group bg-primary" id="input-farm">
-                                                                        <button className="row bg-dark mt-0 col-lg-4 d-flex" id="btn-form">Adjunte la fórmula <br /> <img className="" src={btn_form} /></button>
+                                                                <div class="row justify-content-center btn-group" id="input-farm">
+                                                                        <button className="justify-content-around mt-0 col-lg-4 d-flex" id="btn-add-form">Adjunte la fórmula<img className="" src={btn_form} /></button>
                                                                 </div>
                                                                 <br />
                                                                 <div className="row justify-content-center mt-0">
