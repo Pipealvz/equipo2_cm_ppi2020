@@ -16,7 +16,7 @@ class Solicitud extends React.Component {
                         <div className="App">
                                 <Navbar id="header_global" />
                                 <br />
-                                <div className="container vh-100 col-12 col-lg-12 bg-dark">
+                                <div className="container vh-100 col-12 col-lg-12">
                                         <div className="row justify-content-center">
                                                 <div className="col-12 col-lg-10">
                                                         <div className="col-12 col-lg-10" id="Bloque_solicitud">
@@ -25,6 +25,7 @@ class Solicitud extends React.Component {
                                                                 <br />
                                                                 <div class="row justify-content-center mt-0 btn-group" id="btn-farm">
                                                                         <select class="text-left col-9 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
+                                                                        <option className="sub-item-big" disabled selected>Seleccionar farmacia</option>
                                                                                 <option className="sub-item">Farmacia Rosales</option>
                                                                                 <option className="sub-item">Farmacia Athena SS</option>
                                                                                 <option className="sub-item" >Farmacia D2</option>
@@ -33,14 +34,14 @@ class Solicitud extends React.Component {
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="btn-farm">
                                                                         <select class="text-left col-9 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
-                                                                                <option className="sub-item">Tipo de documento</option>
-                                                                                <option className="sub-item">Farmacia Athena SS</option>
-                                                                                <option className="sub-item" >Farmacia D2</option>
+                                                                        <option className="sub-item-big" disabled selected>Tipo de documento</option>
+                                                                                <option className="sub-item">T.I.</option>
+                                                                                <option className="sub-item" >C.C.</option>
                                                                         </select>
                                                                 </div>
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="btn-farm">
-                                                                        <input type="int" className="col-11 btn btn-primary bg-light" placeholder="Número de documento" id="text-box" required></input>
+                                                                        <input type="int" className="col-9 btn btn-primary bg-light" placeholder="Número de documento" id="text-box" required></input>
                                                                 </div>
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="input-farm">

@@ -71,3 +71,7 @@
 #btn-add-form:focus{
     outline: none;
 }
+
+.sub-item-big{
+    background-color: rgba(128, 128, 128, 0.329);   
+}

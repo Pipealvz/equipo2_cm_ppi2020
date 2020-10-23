@@ -36,14 +36,12 @@ class Solicitud extends React.Component {
                                                                 </div>
                                                                 <br />
                                                                 <div class="mt-2 row justify-content-center btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-9 col-lg-5 btn btn-primary bg-light" id="text-box">Ajustes notificaciones</text>
-                                                                        <button type="button" className="col-2 col-lg-1 btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                        <div class="text-left dropdown-menu" id="dropmenu">
-                                                                                <a className="dropdown-item" id="text-drop">Recibir notificaciones</a>
-                                                                                <hr className="m-0"/>
-                                                                                <a className="dropdown-item" id="text-drop">No recibir notificaciones</a>
-                                                                        </div>
-                                                                        </button>
+                                                                        <select class="text-left col-9 col-lg-5 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
+                                                                                <option className="sub-item-big" disabled selected>Ajustes de notificaciones</option>
+                                                                                <hr className="sub-item-big"/>
+                                                                                <option className="sub-item">Activar notificaciones</option>
+                                                                                <option className="sub-item" >Desactivar notificaciones</option>
+                                                                        </select>
                                                                 </div>
                                                                 <br />
                                                                 <Link className="row justify-content-center mt-0" to="/">

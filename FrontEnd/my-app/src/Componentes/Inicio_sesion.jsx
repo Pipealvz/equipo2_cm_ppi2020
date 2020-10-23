@@ -14,6 +14,7 @@ class Inicio_sesion extends React.Component {
                 return (
                         <div className="App">
                                 <div className="container vh-100" id="container">
+                                        <div className="col fondito"></div>
                                         <div className="logo_domiapp">
                                                 <img src={Logo_domiapp} alt="" className="img-fluid" />
                                         </div>

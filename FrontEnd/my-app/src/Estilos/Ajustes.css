@@ -70,5 +70,7 @@
 }
 
 #dropmenu{
-    border: 1px solid black;
+    border: 1px solid rgb(28, 117, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+

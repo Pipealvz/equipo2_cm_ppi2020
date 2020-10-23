@@ -39,7 +39,7 @@ class Ajustes_sub_name extends React.Component {
                                                                 </div>
                                                                 <br/>
                                                                 <div className="row justify-content-center mt-0" to="/Ajustes">
-                                                                <Link className="col-lg-4 col-8 btn btn-primary btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Cancelar</Link>
+                                                                        <Link className="col-lg-4 col-8 btn btn-primary btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Cancelar</Link>
                                                                 </div>
                                                                 <br />
                                                                 <h6></h6>
