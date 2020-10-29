@@ -20,7 +20,7 @@ class Historial extends React.Component {
     }
     render() {
         return (
-            <div className="App">
+            <div className="App-h">
                 <Navbar id="header_global" />
                 <br />
                 <div className="container">

@@ -13,7 +13,7 @@ import btn_form from '../Images_proyectos/btn-add-formula.png';
 class Solicitud extends React.Component {
         render() {
                 return (
-                        <div className="App">
+                        <div className="App-s">
                                 <Navbar id="header_global" />
                                 <br />
                                 <div className="container vh-100 col-12 col-lg-12">

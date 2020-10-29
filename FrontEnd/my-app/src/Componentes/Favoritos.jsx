@@ -20,7 +20,7 @@ class Solicitud extends React.Component {
             }
             render() {
                 return (
-                    <div className="App">
+                    <div className="App-s">
                         <Navbar id="header_global" />
                         <br />
                         <div className="container vh-100">

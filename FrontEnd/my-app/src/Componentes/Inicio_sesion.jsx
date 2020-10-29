@@ -18,31 +18,31 @@ class Inicio_sesion extends React.Component {
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <hr/>
                                                         <br/>
-                                                        <form >
+                                                        <form>
                                                                 <div className="form-group">
-                                                                        <label className="input_Email">Correo</label>
                                                                         <input
                                                                                 type="email"
                                                                                 name="email"
                                                                                 id="inputEmail"
                                                                                 className="form-control"
                                                                                 required
-                                                                                placeholder="Correo"
+                                                                                placeholder=""
                                                                         />
+                                                                        <label className="form-label">Correo</label>
                                                                 </div>
-                                                                <div className="form-group ">
-                                                                        <label className="input_Password">Contraseña</label>
+                                                                <div className="form-group">
                                                                         <input
                                                                                 type="password"
                                                                                 name="contrasena"
                                                                                 id="inputPassword"
                                                                                 className="form-control"
                                                                                 required
-                                                                                placeholder="Contraseña"
+                                                                                placeholder=""
                                                                         />
+                                                                        <label className="form-label">Contraseña</label>
                                                                 </div>
                                                                 <Link id="link" to="/Solicitud"> 
-                                                                <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">                                                                                                                                           
+                                                                <button className=" btn btn-primary btn-block mt-0" type="submit" id="btn_inicio">                                                                                                                                           
                                                                  <strong>Iniciar Sesión</strong>                                                       
                                                                 </button>
                                                                 <hr/>

@@ -11,7 +11,7 @@ import Navbar from './Navbar-btn';
 class Notificaciones extends React.Component {
     render() {
         return (
-            <div className="App">
+            <div className="App-n">
                 <Navbar id="header_global" />
                 <br/>
                 <div className="container vh-100">

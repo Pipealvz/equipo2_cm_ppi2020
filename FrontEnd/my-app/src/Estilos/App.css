@@ -23,38 +23,71 @@
   justify-content: center;
   color: rgba(95, 97, 100, 0.719);
   display: flex;
-  margin-top: 10px;
   font-weight: 500;
   text-transform: uppercase;
   font-size: x-large;
 }
-.input_Password{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2vmax;
-  color: black;
-  font-size: small;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 #inputPassword{
   border-radius: 5px;
   background-color: rgba(213, 228, 250, 0.548);
+  width: 100%;
+  height: 100%; 
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 0px;
 }
-.input_Email{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2vmax;
-  color: black;
-  font-size: small;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+
 #inputEmail{
   border-radius: 5px;
   background-color: rgba(213, 228, 250, 0.548);
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid;
+  margin-bottom: 0px;
+}
+
+.form-label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gray;
+  font-size: small;
+  text-transform: uppercase;
+  transform: translateY(-3em);
+  transform-origin: 0 0;
+  transition: all .3s;
+  margin-bottom: 0px;
+}
+
+.form-group{
+  transition: all .3s;
+}
+.form-group:focus-within{
+  transform: scale(1.02, 1.02);
+}
+#inputEmail:focus + .form-label{
+  transform: translateY(-5em) scale(.8);
+  color: rgb(28, 117, 241);
+}
+#inputPassword:focus + .form-label{
+  transform: translateY(-5em) scale(.8);
+  color: rgb(28, 117, 241);
+}
+
+@media(min-width:900px){
+  #inputEmail{
+    margin-bottom: 10px;
+  }
+  #inputPassword{
+    margin-bottom: 10px;
+  }
+  #Bloque_inicio{
+    margin-bottom: 1vmax;
+  }
 }
 .Text_contraseña{
   padding: 10px;
 }
+
 #btn_inicio{
   background-color: rgba(95, 97, 100, 0.719);
   border-radius: 5px;

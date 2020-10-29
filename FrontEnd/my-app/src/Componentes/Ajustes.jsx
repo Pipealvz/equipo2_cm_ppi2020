@@ -13,7 +13,7 @@ import icon_edit from '../Images_proyectos/btn-icon-edit.png';
 class Solicitud extends React.Component {
         render() {
                 return (
-                        <div className="App">
+                        <div className="App-a">
                                 <Navbar id="header_global" />
                                 <br />
                                 <div className="container vh-100">
