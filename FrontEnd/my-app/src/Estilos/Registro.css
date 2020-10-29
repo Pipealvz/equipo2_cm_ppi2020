@@ -1,20 +1,18 @@
+.App{
+  text-align: center;
+}
 /*BLOQUE REGISTRO*/
 #Bloque_registro{
-    background-color: rgb(74, 147, 255);
-    margin-top: 4%;
     text-align: left;
-    border-color: rgb(28, 117, 241);
-    border-radius: 20px;
-    border-style: solid;
+    border-radius: 10px;
     border-width: 1px;
 }
 #Texto_registro{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
-    color: rgb(28, 117, 241);
+    color: rgba(95, 97, 100, 0.719);
     display: flex;
-    margin-top: 10px;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: x-large;
   }
@@ -28,7 +26,7 @@
 }
 #input_Email{
     border-radius: 5px;
-    background-color: rgb(213, 228, 250);
+    background-color: rgba(213, 228, 250, 0.548);
 }
 
 .inputPassword{
@@ -41,7 +39,7 @@
 }
 #input_Password{
     border-radius: 5px;
-    background-color: rgb(213, 228, 250);
+    background-color: rgba(213, 228, 250, 0.548);
 }
 
 .inputName{
@@ -54,24 +52,17 @@
 }
 #input_Name{
     border-radius: 5px;
-    background-color: rgb(213, 228, 250);
-}
-#Bloque_registro{
-  background-color: white;
-  margin-top: 40px;
-  border-radius: 5px;
+    background-color: rgba(213, 228, 250, 0.548);
 }
 .Link_sesion{
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 #btn_registrar{
-    background-color:  rgb(28, 117, 241);
+    background-color: rgba(95, 97, 100, 0.719);
     border-radius: 5px;
     color: whitesmoke;
     margin-top: 40px;
 }
-#Link{
-    color: black;
+#link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

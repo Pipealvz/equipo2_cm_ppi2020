@@ -1,45 +1,27 @@
 
 .App{
+  background-image: url(../Images_proyectos/background-doctor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
   text-align: center;
-}
-@media(min-width: 1100px){
-  .App{
-    background-image: url(../Images_proyectos/background-covid-domiapp.svg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
 }
 .Text_info{
   display: block;
   text-align: justify;
   font-size: small;
 }
-/*BLOQUE NAVBAR*/
-.logo_domiapp{
-  margin-top: 10px;
-  padding: 5px;
-}
 
 /*BLOQUE INICIO SESIÓN*/
-.row{
-  margin-top: 30px;
-}
 #Bloque_inicio{
   border-radius: 10px;
-  margin-top: 4%;
   text-align: left;
-  border-style: solid;
   border-width: 1px;
-  border-color: rgb(28, 117, 241);
-  align-items: center;
-  background-color: white;
 }
 #Texto_inicio{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: center;
-  color: rgb(28, 117, 241);
+  color: rgba(95, 97, 100, 0.719);
   display: flex;
   margin-top: 10px;
   font-weight: 500;
@@ -56,7 +38,7 @@
 }
 #inputPassword{
   border-radius: 5px;
-  background-color: rgb(213, 228, 250);
+  background-color: rgba(213, 228, 250, 0.548);
 }
 .input_Email{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,16 +50,17 @@
 }
 #inputEmail{
   border-radius: 5px;
-  background-color: rgb(213, 228, 250);
+  background-color: rgba(213, 228, 250, 0.548);
 }
 .Text_contraseña{
   padding: 10px;
 }
 #btn_inicio{
-  background-color:  rgb(28, 117, 241);
+  background-color: rgba(95, 97, 100, 0.719);
   border-radius: 5px;
   color: whitesmoke;
   margin-top: 20px;
+  border: none;
 }
 #link{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -93,11 +76,4 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   width: auto;
-}
-
-@media(min-width: 1100px){
-  .fondito{
-    height: 100px;
-    background-color: transparent;
-  }
 }

@@ -6,23 +6,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
 import '../Estilos/App.css';
 import Footer from './Footer';
-/*IMPORT-IMAGES*/
-import Logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
+/*IMPORT-IMAGES*/ 
 
 class Inicio_sesion extends React.Component {
         render(){
                 return (
                         <div className="App">
-                                <div className="container vh-100" id="container">
-                                        <div className="col fondito"></div>
-                                        <div className="logo_domiapp">
-                                                <img src={Logo_domiapp} alt="" className="img-fluid" />
-                                        </div>
-                                        <div className="row justify-content-center">
-                                                <div className="col-12 col-lg-6" id="Bloque_inicio">
+                                <div className="container-fluid vh-100" id="container">
+                                        <div className="row vh-100 justify-content-center">
+                                                <div className="col-12 col-lg-6 align-self-end" id="Bloque_inicio">
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <hr/>
-                                                        <br />
+                                                        <br/>
                                                         <form >
                                                                 <div className="form-group">
                                                                         <label className="input_Email">Correo</label>
@@ -50,17 +45,15 @@ class Inicio_sesion extends React.Component {
                                                                 <button className=" btn btn-primary btn-block" type="submit" id="btn_inicio">                                                                                                                                           
                                                                  <strong>Iniciar Sesión</strong>                                                       
                                                                 </button>
+                                                                <hr/>
                                                                 </Link>                                                                   
                                                                 <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro"> ¡¡Registrate!!</Link>
                                                                 </span>                                                               
                                                         </form>
-                                                        <br />
-                                                        <h6></h6>
-                                                        <br />
+                                                        <br/>                                                       
                                                 </div>
                                         </div>
-                                </div>   
-                                <Footer/>                         
+                                </div>              
                         </div>  
                 );
         }
