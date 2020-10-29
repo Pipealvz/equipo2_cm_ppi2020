@@ -1,85 +1,101 @@
-.App{
+
+.App-r{
+  background-image: url(../Images_proyectos/background-doctor.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
   text-align: center;
 }
-/*BLOQUE REGISTRO*/
+.Text_info{
+  display: block;
+  text-align: justify;
+  font-size: small;
+}
+
+/*BLOQUE INICIO SESIÓN*/
 #Bloque_registro{
-    text-align: left;
-    border-radius: 10px;
-    border-width: 1px;
+  border-radius: 10px;
+  text-align: left;
+  border-width: 1px;
 }
 #Texto_registro{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center;
-    color: rgba(95, 97, 100, 0.719);
-    display: flex;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: x-large;
-  }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  color: rgba(95, 97, 100, 0.719);
+  display: flex;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+#inputPassword{
+  border-radius: 5px;
+  background-color: rgba(213, 228, 250, 0.548);
+  width: 100%;
+  height: 100%; 
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 0px;
+}
 
-#input_Email{
+#inputEmail{
   border-radius: 5px;
   background-color: rgba(213, 228, 250, 0.548);
   border: none;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid;
+  margin-bottom: 0px;
 }
-
-#input_Password{
+#inputName{
   border-radius: 5px;
   background-color: rgba(213, 228, 250, 0.548);
   border: none;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid;
-}
-#input_Name{
-  border-radius: 5px;
-  background-color: rgba(213, 228, 250, 0.548);
-  border: none;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid;
+  margin-bottom: 0px;
 }
 
-#form-label{
+
+.label{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: gray;
   font-size: small;
   text-transform: uppercase;
-  transform: translateY(2em);
+  transform: translateY(-2.5em);
   transform-origin: 0 0;
   transition: all .3s;
   margin-bottom: 0px;
 }
 
-#form-group{
+.form-group{
   transition: all .3s;
 }
-#form-group:focus-within{
+.form-group:focus-within{
   transform: scale(1.02, 1.02);
 }
-
-.inputEmail:focus + #form-label{
+#inputEmail:focus + .label{
   transform: translateY(-5em) scale(.8);
   color: rgb(28, 117, 241);
 }
-.input_Name:focus + #form-label{
-  transform: translateY(5em) scale(.8);
+#inputPassword:focus + .label{
+  transform: translateY(-5em) scale(.8);
+  color: rgb(28, 117, 241);
+}
+#inputName:focus + .label{
+  transform: translateY(-5em) scale(.8);
   color: rgb(28, 117, 241);
 }
 
-
 .Link_sesion{
-    color: black;
+  color: black;
 }
 #btn_registrar{
-    background-color: rgba(95, 97, 100, 0.719);
-    border-radius: 5px;
-    color: whitesmoke;
-    margin-top: 40px;
+  background-color: rgba(95, 97, 100, 0.719);
+  border-radius: 5px;
+  color: whitesmoke;
+  margin-top: 40px;
 }
 #link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -10,45 +10,46 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Registro extends React.Component {
     render() {
         return (
-            <div className="App">
+            <div className="App-r">
                 <div className="container-fluid vh-100" id="container">
                     <div className="row vh-100 justify-content-center">
                         <div className="col-12 col-lg-6 align-self-end" id="Bloque_registro">
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <hr />
-                            <form >
-                                <div className="form-group" id="form-group">
-                                    <label className="inputName" id="form-label">Nombre de usuario</label>
+                            <br />
+                            <form>
+                                <div className="form-group">
                                     <input
                                         type="text"
-                                        name="Nombre"
-                                        id="input_Name"
+                                        name="nombre"
+                                        id="inputName"
                                         className="form-control"
                                         required
                                         placeholder=""
                                     />
+                                    <label className="label">Nombre</label>
                                 </div>
-                                <div className="form-group" id="form-group">
-                                    <label className="inputEmail" id="form-label">Correo</label>
+                                <div className="form-group">
                                     <input
                                         type="email"
-                                        name="email"
-                                        id="input_Email"
+                                        name="correo"
+                                        id="inputEmail"
                                         className="form-control"
                                         required
                                         placeholder=""
                                     />
+                                    <label className="label">Correo</label>
                                 </div>
-                                <div className="form-group" id="form-group">
-                                    <label className="inputPassword" id="form-label">Contraseña</label>
+                                <div className="form-group">
                                     <input
                                         type="password"
                                         name="contrasena"
-                                        id="input_Password"
+                                        id="inputPassword"
                                         className="form-control"
                                         required
                                         placeholder=""
                                     />
+                                <label className="label">Contraseña</label>
                                 </div>
                                 <button className="btn btn-block mt-4" type="submit" id="btn_registrar">
                                     <strong>Crear cuenta</strong>
@@ -60,6 +61,7 @@ class Registro extends React.Component {
                                     </p>
                                 </div>
                             </form>
+                            <br />
                         </div>
                     </div>
                 </div>
