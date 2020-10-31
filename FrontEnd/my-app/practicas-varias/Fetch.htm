@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH</title>
+</head>
+<body>
+    <div class="container mt-5 p-5">
+        <div class="row p-2 justify-content-center">
+            <button class="btn btn-primary texto" onclick="llamar()">TRAER OBJETO</button>
+        </div>
+        <div class="row p-2 mt-5 justify-content-center">
+            <p class="texto">DATOS JSON</p>
+            <p  class="container" id="contenido"> </p>
+        </div>
+    </div>
+</body>
+    <style>
+        .container{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .row{
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+        .texto{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            font-weight: lighter;
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>
+        var container = document.querySelector('#contenido')
+        function llamar(){
+            fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(res => res.json())
+            .then(data =>{
+                console.log(data[1])
+            })
+        }
+    </script>
+</html>

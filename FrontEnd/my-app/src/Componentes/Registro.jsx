@@ -12,7 +12,7 @@ class Registro extends React.Component {
         return (
             <div className="App-r">
                 <div className="container-fluid vh-100" id="container">
-                    <div className="row vh-100 justify-content-center">
+                    <div className="row vh-100 justify-content-start">
                         <div className="col-12 col-lg-6 align-self-end" id="Bloque_registro">
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <hr />
@@ -22,7 +22,7 @@ class Registro extends React.Component {
                                     <input
                                         type="text"
                                         name="nombre"
-                                        id="inputName"
+                                        id="input_Name"
                                         className="form-control"
                                         required
                                         placeholder=""
@@ -33,7 +33,7 @@ class Registro extends React.Component {
                                     <input
                                         type="email"
                                         name="correo"
-                                        id="inputEmail"
+                                        id="input_Email"
                                         className="form-control"
                                         required
                                         placeholder=""
@@ -44,7 +44,7 @@ class Registro extends React.Component {
                                     <input
                                         type="password"
                                         name="contrasena"
-                                        id="inputPassword"
+                                        id="input_Password"
                                         className="form-control"
                                         required
                                         placeholder=""

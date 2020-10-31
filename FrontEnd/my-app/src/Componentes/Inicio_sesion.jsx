@@ -4,42 +4,43 @@ import { Link } from 'react-router-dom';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
-import '../Estilos/App.css';
+import '../Estilos/Inicio_sesion.css';
 import Footer from './Footer';
 /*IMPORT-IMAGES*/ 
+import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 
 class Inicio_sesion extends React.Component {
         render(){
                 return (
                         <div className="App">
-                                <div className="container-fluid vh-100" id="container">
-                                        <div className="row vh-100 justify-content-center">
-                                                <div className="col-12 col-lg-6 align-self-end" id="Bloque_inicio">
+                                <div className="container vh-100" id="container">
+                                        <div className="row vh-100 justify-content-end">
+                                                <div className="col-12 col-lg-4 align-self-center" id="Bloque_inicio">
+                                                        <img src={logo_domiapp} className="img-fluid mt-5 mb-5"/>
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <hr/>
                                                         <br/>
                                                         <form>
                                                                 <div className="form-group">
-                                                                        <input
+                                                                     <input
                                                                                 type="email"
-                                                                                name="email"
-                                                                                id="inputEmail"
+                                                                                name="correo"
+                                                                                id="i-email"
                                                                                 className="form-control"
                                                                                 required
-                                                                                placeholder=""
-                                                                        />
-                                                                        <label className="form-label">Correo</label>
-                                                                </div>
-                                                                <div className="form-group">
-                                                                        <input
+                                                                                placeholder="correo"
+                                                                     />
+                                                                <label for="name" className="form-label">Correo</label>
+                                                                     <br/>
+                                                                     <input
                                                                                 type="password"
                                                                                 name="contrasena"
-                                                                                id="inputPassword"
+                                                                                id="i-pass"
                                                                                 className="form-control"
                                                                                 required
-                                                                                placeholder=""
-                                                                        />
-                                                                        <label className="form-label">Contraseña</label>
+                                                                                placeholder="contraseña"
+                                                                     />
+                                                                <label for="password" className="form-label">Contraseña</label>
                                                                 </div>
                                                                 <Link id="link" to="/Solicitud"> 
                                                                 <button className=" btn btn-primary btn-block mt-0" type="submit" id="btn_inicio">                                                                                                                                           
@@ -47,10 +48,10 @@ class Inicio_sesion extends React.Component {
                                                                 </button>
                                                                 <hr/>
                                                                 </Link>                                                                   
-                                                                <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro"> ¡¡Registrate!!</Link>
-                                                                </span>                                                               
+                                                                <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro">¡Registrate!</Link>
+                                                                </span> 
                                                         </form>
-                                                        <br/>                                                       
+                                                        <br/>
                                                 </div>
                                         </div>
                                 </div>              
