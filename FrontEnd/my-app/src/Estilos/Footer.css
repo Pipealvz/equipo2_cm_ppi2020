@@ -1,125 +1,57 @@
 /*BLOQUE FOOTER*/
-footer{
+#footer-copy{
     background-color: rgb(4, 41, 92);
     color: whitesmoke;
     width: auto;
+    border-radius: 0px;
   }
 #more-info{
   width: auto;
-  color: black;
+  color: whitesmoke;
   background-color:  rgb(255, 255, 255);
+  border-radius: 0px;
 }
-
-/*SECTION_CONTACT*/  
-#img_block{
-    font-size: small;
-    display: flex;
-    width: auto; 
-    text-align: center;
-    justify-content: right;
-  }
-  
-.icon{
-    display: flex;
-    margin-top: 12px;
-    justify-content: center;
-    width: auto;
-  }
-
-.col2 h1{
-    font-size: 20px;
-  }
-  
-  .section_images_footer{
-    margin-top: 3%;
-    display: flex;
-    width: auto;
-    list-style: none;
-    height: 5vmax;
-  }
-
-@media(max-width: 600px){
-  .section_images_footer{
-    display: block;
-    width: 100px;
-  }
-}
-  /*DISCORD_SECTION*/
-.Footer_discord{
-    margin-left: 10px;
-    align-content: center;
-    display: flex;
-  }
-#footer_discord_texto{
-    color: whitesmoke;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-  }
-#footer_discord_texto:hover{
-    text-decoration: none;
-}
-.Footer_discord:hover{
-  border-radius: 15px;
-  background-color: rgba(159, 165, 240, 0.37);
-}
-
-  /*GITHUB_SECTION*/
-.Footer_git{
-    margin-left: 10px;
-    align-content: center;
-    display: flex;
-  }
-#footer_github_texto{
-    color: whitesmoke;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    align-self: center;
-  }
-#footer_github_texto:hover{
-    text-decoration: none;
-  }
-.Footer_git:hover{
-    border-radius: 15px;
-    background-color: rgba(159, 165, 240, 0.37);
-  }
-
-  /*GMAIL_SECTION*/
-.Footer_gmail{
-    margin-left: 10px;
-    align-content: center;
-    display: flex;
-  }
-  
-.footer_gmail_texto{
-    color: whitesmoke;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    outline: none;
-    border: none;
-    background-color: transparent;
-  }
-.footer_gmail_texto:hover{
-    text-decoration: none;
-  }
-  .footer_gmail_texto:focus{
-    outline: none;
-  }
-.Footer_gmail:hover{
-    border-radius: 15px;
-    background-color: rgba(159, 165, 240, 0.37);
-  }
-.btn-styles-footer{
+#text-more{
   background-color: transparent;
   border: none;
-}
-.btn-styles-footer:focus{
+  color: rgb(114, 111, 111);
+}#text-more:focus{
   outline: none;
 }
-  /*DERECHOS-RESERVADOS_SECTION*/
-#derechos_reservados{
-    text-align: end;
-    width: auto;
-  }
+
+
+#red-social{
+  background-color: rgb(114, 111, 111);
+  border-radius: 0px;
+  border: none;
+}#text-social{
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  padding: 10px;
+}#text-social:focus{
+  outline: none;
+}
+
+.btn-social{
+  background-color: transparent;
+  border: none;
+  color: black;
+  display: block;
+  width: 5em;
+  height: 5em;
+}.btn-social:hover{
+  background-color: rgba(159, 165, 240, 0.37);
+  transition: all .3s;
+  transform: translateY(-0.25em);
+  border-radius: 50%;
+}.btn-social:focus{
+  outline: none;
+}
+
+.info{
+  text-align: justify;
+}

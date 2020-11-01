@@ -14,10 +14,10 @@ class Solicitud extends React.Component {
         render() {
                 return (
                         <div className="App-s">
-                                <Navbar id="header_global" />
+                                <Navbar id="header_global"/>
                                 <br />
                                 <div className="container">
-                                        <div className="row vh-100 justify-content-center">
+                                        <div className="row mb-5 justify-content-center">
                                                         <div className="col-12 col-lg-5 align-self-start" id="Bloque_solicitud">
                                                                 <h1 className="text-center" id="Texto_solicitud">Solicitudes</h1>
                                                                 <hr />

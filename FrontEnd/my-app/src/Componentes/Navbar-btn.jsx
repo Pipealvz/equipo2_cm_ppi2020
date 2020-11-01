@@ -25,8 +25,8 @@ class Navbar_btn extends React.Component {
             <li className="nav-item active nav-link" id="nav-sol">
               <NavLink to="/Solicitud" className="Link-btn">
                 <button className="btn-sol">
-                  <div className=""><img src={icon_sol} /></div>
-                  <div className="text-light text-uppercase">Solicitud</div>
+                  <div className="img-sol"><img src={icon_sol} /></div>
+                  <div className="text-sol">Solicitud</div>
                 </button>
               </NavLink>
             </li>
@@ -53,7 +53,7 @@ class Navbar_btn extends React.Component {
               <NavLink to="/Historial" className="Link-btn">
                 <button className="btn-his">
                   <div className=""><img src={icon_his} /></div>
-                  <div className="text-light">Historial</div>
+                  <div className="">Historial</div>
                 </button>
               </NavLink>
             </li>
@@ -62,7 +62,7 @@ class Navbar_btn extends React.Component {
               <NavLink to="/Notificaciones" className="Link-btn">
                 <button className="btn-not">
                   <div className=""><img src={icon_not} /></div>
-                  <div className="text-center">Notificaciones</div>
+                  <div className="">Notificaciones</div>
                 </button>
               </NavLink>
             </li>

@@ -29,112 +29,6 @@
 /*BTN-SOL*/
 .btn-sol{
   background-color: transparent;
-  border: transparent;
-  width: 6vmax;
-  height: auto;
-}
-.btn-sol:hover{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-.btn-sol:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-  outline: none;
-}
-/*BTN-AJUS*/
-.btn-aju{
-  background-color: transparent;
-  border: transparent;
-  width: 6vmax;
-  height: auto;
-}
-.btn-aju:hover{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-.btn-aju:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-  outline: none;
-}
-/*BTN-FAV*/
-.btn-fav{
-  background-color: transparent;
-  border: transparent;
-  width: 6vmax;
-  height: auto;
-}
-.btn-fav:hover{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-.btn-fav:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-  outline: none;
-}
-/*BTN-HIS*/
-.btn-his{
-  background-color: transparent;
-  border: transparent;
-  width: 6vmax;
-  height: auto;
-}
-.btn-his:hover{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-.btn-his:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-  outline: none;
-}
-/*BTN-NOT*/
-.btn-not{
-  background-color: transparent;
-  border: transparent;
-  width: 6vmax;
-  height: auto;
-}
-.btn-not:hover{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-}
-.btn-not:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
-  outline: none;
-}
-.text-btn{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  text-transform: uppercase;
-  margin-top: 5px;
-  margin-bottom: -5px;
-  text-align: center;
-}
-.Link-btn:hover{
-  text-decoration: none;
-}
-/*BUTTONS-ZONE*/
-#btn-zone{
-  display: flex;
-  justify-content: center;
-}
-#navbarEfect{
-  justify-content: center;
-}
-#btn-burger{
-  border: transparent;
-}
-#btn-burger:focus{
-  outline: none;
-  border-style: solid, black;
-}
-/*BTN-SOL*/
-.btn-sol{
-  background-color: transparent;
   display: block;
   border: transparent;
   width: 100%;
@@ -145,10 +39,10 @@
 .btn-sol:hover{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
+  transition: all .3s;
+  transform: translateY(-0.25em);
 }
 .btn-sol:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
   outline: none;
 }
 /*BTN-AJUS*/
@@ -163,10 +57,10 @@
 .btn-aju:hover{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
+  transition: all .3s;
+  transform: translateY(-0.25em);
 }
 .btn-aju:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
   outline: none;
 }
 /*BTN-FAV*/
@@ -181,10 +75,10 @@
 .btn-fav:hover{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
+  transition: all .3s;
+  transform: translateY(-0.25em);
 }
 .btn-fav:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
   outline: none;
 }
 /*BTN-HIS*/
@@ -199,10 +93,10 @@
 .btn-his:hover{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
+  transition: all .3s;
+  transform: translateY(-0.25em);
 }
 .btn-his:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
   outline: none;
 }
 /*BTN-NOT*/
@@ -217,15 +111,11 @@
 .btn-not:hover{
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
+  transition: all .3s;
+  transform: translateY(-0.25em);
 }
 .btn-not:focus{
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.589);
   outline: none;
-}
-#text-light{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: uppercase;
 }
 .Link-btn:hover{
   text-decoration: none;
@@ -237,24 +127,44 @@
         display: flex;
         justify-content: space-between;
       }
+      .btn-sol:focus{
+        transition: all .3s;
+        transform: translateY(-0.25em);
+      }
       .btn-aju{
         box-shadow: 3px 0px rgba(255, 255, 255, 0.2) inset;
         display: flex;
         justify-content: space-between;
+      }
+      .btn-aju:focus{
+        transition: all .3s;
+        transform: translateY(-0.25em);
       }
       .btn-fav{
         box-shadow: 3px 0px rgba(255, 255, 255, 0.2) inset;
         display: flex;
         justify-content: space-between;
       }
+      .btn-fav:focus{
+        transition: all .3s;
+        transform: translateY(-0.25em);
+      }
       .btn-his{
         box-shadow: 3px 0px rgba(255, 255, 255, 0.2) inset;
         display: flex;
         justify-content: space-between;
       }
+      .btn-his:focus{
+        transition: all .3s;
+        transform: translateY(-0.25em);
+      }
       .btn-not{
         box-shadow: 3px 0px rgba(255, 255, 255, 0.2) inset;
         display: flex;
         justify-content: space-between;
+      }
+      .btn-not:focus{
+        transition: all .3s;
+        transform: translateY(-0.25em);
       }
   }
