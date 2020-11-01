@@ -1,0 +1,115 @@
+
+.App-f{
+  background-image: url(../Images_proyectos/background-halloween.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  text-align: center;
+}
+.Text_info .f{
+  text-align: justify;
+  font-size: small;
+}
+/*IMAGE-ZONE*/
+.img-h{
+  margin: 50px 0px 30px 0px;
+}
+/*IMAGE-ZONE-END*/
+/*BLOQUE INICIO SESIÓN*/
+#Bloque_inicio-f{
+  text-align: left;
+  border-width: 1px;
+  background: linear-gradient(rgb(255, 153, 0),rgb(255, 136, 0));
+  box-shadow: 2px 2px 5px #999;
+  display: inline-block;
+}
+
+#Texto_inicio-f{
+  justify-content: center;
+  font-family: cursive;
+  color: black;
+  display: flex;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+/*INPUT-ZONE*/
+#i-email-f{
+  transition: all .3s;
+  background-color: transparent;
+  color: black;
+}
+#i-pass-f{
+  transition: all .3s;
+  background-color: transparent;
+  color: black;
+}
+#form-label{
+  font-size: medium;
+  opacity: 1;
+  transform: translateY(-1.5em);
+  transform-origin: 0 0;
+  transition: all .3s;
+  font-family: cursive;
+  color: black;
+}
+.f{
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0px;
+}
+.f:focus{
+  box-shadow: none;
+}
+.f::placeholder{
+  color: transparent;
+}
+.f:valid:focus{
+  border-color: green;
+}
+.f:invalid:focus{
+  border-color: red;
+}
+.f:focus + #form-label,
+.f:not(:placeholder-shown) + #form-label
+{
+  transform: translateY(-2.6em) scale(.8);
+  color: rgb(0, 0, 0);
+}
+#i-email-f:focus-within{
+  transform: scale(1.03,1.03);
+}
+#i-pass-f:focus-within{
+  transform: scale(1.03,1.03);
+}
+
+/*INPUT-ZONE-END*/
+
+#btn_inicio-f{
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: whitesmoke;
+  margin-top: 20px;
+  border: none;
+  font-weight: normal;
+}
+#link-f{
+  font-family: cursive;
+  font-size: small;
+  text-transform: uppercase;
+}
+#link-f:hover{
+  text-decoration: none;
+}
+.link-registro-f{
+  margin-top: 6px;
+  font-family: cursive;
+  font-size: small;
+  width: auto;
+}
+
+hr{
+  background-color: white;
+}

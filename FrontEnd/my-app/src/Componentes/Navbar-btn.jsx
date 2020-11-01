@@ -15,65 +15,55 @@ import icon_domiApp from '../Images_proyectos/Logo_domiApp-icon.png';
 class Navbar_btn extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+      <nav className="navbar navbar-expand-md navbar-light sticky-top">
         <img src={icon_domiApp} alt="img-fluid" />
         <button id="btn-burger" className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="col navbar-nav mr-auto" id="btn-zone">
-            <li className="col-sm-2 col-md-2 nav-item active nav-link">
+          <ul className="col navbar-nav justify-content-around" id="btn-zone">
+            <li className="nav-item active nav-link" id="nav-sol">
               <NavLink to="/Solicitud" className="Link-btn">
-              <button className="btn-sol">
-                  <img src={icon_sol} />
+                <button className="btn-sol">
+                  <div className=""><img src={icon_sol} /></div>
+                  <div className="text-light text-uppercase">Solicitud</div>
                 </button>
-              <div className="text-btn">
-                Solicitud
-              </div>
               </NavLink>
             </li>
-            <hr className="m-0"/>
-            <li class="col-sm-2 col-md-2 nav-item nav-link">
-            <NavLink to="/Ajustes" className="Link-btn">
-              <button className="btn-aju">
-                <img src={icon_aju} />
-              </button>
-              <div className="text-btn">
-                Ajustes
-              </div>
+            <hr className="m-0" />
+            <li class="nav-item nav-link" id="nav-aju">
+              <NavLink to="/Ajustes" className="Link-btn">
+                <button className="btn-aju">
+                  <div className=""><img src={icon_aju} /></div>
+                  <div>Ajustes</div>
+                </button>
               </NavLink>
             </li>
-            <hr className="m-0"/>
-            <li class="col-sm-2 col-md-2 nav-item nav-link">
-            <NavLink to="/Favoritos" className="Link-btn">
-              <button className="btn-fav">
-                <img src={icon_fav} />
-              </button>
-              <div className="text-btn">
-                Favoritos
-              </div>
+            <hr className="m-0" />
+            <li class="nav-item nav-link" id="nav-fav">
+              <NavLink to="/Favoritos" className="Link-btn">
+                <button className="btn-fav">
+                  <div className=""><img src={icon_fav} /></div>
+                  <div className="">Favoritos</div>
+                </button>
               </NavLink>
             </li>
-            <hr className="m-0"/>
-            <li class="col-sm-2 col-md-2 nav-item nav-link">
-            <NavLink to="/Historial" className="Link-btn">
-              <button className="btn-his">
-                <img src={icon_his} />
-              </button>
-              <div className="text-btn">
-                Historial
-                </div>
-                </NavLink>
+            <hr className="m-0" />
+            <li class="nav-item nav-link" id="nav-his">
+              <NavLink to="/Historial" className="Link-btn">
+                <button className="btn-his">
+                  <div className=""><img src={icon_his} /></div>
+                  <div className="text-light">Historial</div>
+                </button>
+              </NavLink>
             </li>
-            <hr className="m-0"/>
-            <li className="col-sm-2 col-md-2 nav-item nav-link">
-            <NavLink to="/Notificaciones" className="Link-btn">
-              <button className="btn-not">
-                <img src={icon_not} />
-              </button>
-              <div className="text-btn">
-                Notificaciones
-              </div>
+            <hr className="m-0" />
+            <li className="nav-item nav-link" id="nav-not">
+              <NavLink to="/Notificaciones" className="Link-btn">
+                <button className="btn-not">
+                  <div className=""><img src={icon_not} /></div>
+                  <div className="text-center">Notificaciones</div>
+                </button>
               </NavLink>
             </li>
           </ul>

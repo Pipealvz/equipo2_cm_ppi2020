@@ -1,37 +1,15 @@
-/*BLOQUE-ALL-FOOTER*/
-#section-info{
-  text-align: left;
-}
 /*BLOQUE FOOTER*/
 footer{
     background-color: rgb(4, 41, 92);
     color: whitesmoke;
     width: auto;
   }
-.container-body{
-    display: flex;
-  }
-  
-.col{
-    width: auto;
-    font-size: smaller;
-    justify-content: center;
-  }
-  
-.col h1{
-    font-size: 20px;
-  }
-  
-.col p{
-    text-align: justify;
-  }
-  
-.info_block{
-    display: block;
-    width: auto;
-    text-align: center;
-  }
-  
+#more-info{
+  width: auto;
+  color: black;
+  background-color:  rgb(255, 255, 255);
+}
+
 /*SECTION_CONTACT*/  
 #img_block{
     font-size: small;
@@ -59,6 +37,7 @@ footer{
     list-style: none;
     height: 5vmax;
   }
+
 @media(max-width: 600px){
   .section_images_footer{
     display: block;

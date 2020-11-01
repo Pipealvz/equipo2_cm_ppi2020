@@ -16,7 +16,7 @@ class Inicio_sesion extends React.Component {
                                 <div className="container vh-100" id="container">
                                         <div className="row vh-100 justify-content-end">
                                                 <div className="col-12 col-lg-4 align-self-center" id="Bloque_inicio">
-                                                        <img src={logo_domiapp} className="img-fluid mt-5 mb-5"/>
+                                                        <img src={logo_domiapp} className="img-fluid"/>
                                                         <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                         <hr/>
                                                         <br/>
@@ -43,11 +43,11 @@ class Inicio_sesion extends React.Component {
                                                                 <label for="password" className="form-label">Contraseña</label>
                                                                 </div>
                                                                 <Link id="link" to="/Solicitud"> 
-                                                                <button className=" btn btn-primary btn-block mt-0" type="submit" id="btn_inicio">                                                                                                                                           
-                                                                 <strong>Iniciar Sesión</strong>                                                       
+                                                                <button className=" btn btn-primary btn-block mt-0" type="submit" id="btn_inicio">
+                                                                 <strong>Iniciar sesión</strong>
                                                                 </button>
                                                                 <hr/>
-                                                                </Link>                                                                   
+                                                                </Link>
                                                                 <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro">¡Registrate!</Link>
                                                                 </span> 
                                                         </form>

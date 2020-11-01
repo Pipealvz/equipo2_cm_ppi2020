@@ -10,13 +10,17 @@
   text-align: justify;
   font-size: small;
 }
-
+/*IMAGE-ZONE*/
+.img-fluid{
+  margin: 50px 0px 30px 0px;
+}
+/*IMAGE-ZONE-END*/
 /*BLOQUE INICIO SESIÓN*/
 #Bloque_inicio{
   text-align: left;
   border-width: 1px;
   background-color: white;
-  box-shadow: inset;
+  box-shadow: 2px 2px 5px #999;
   display: inline-block;
 }
 
@@ -25,7 +29,6 @@
   justify-content: center;
   color: rgba(95, 97, 100, 0.719);
   display: flex;
-  font-weight: 500;
   text-transform: uppercase;
   font-size: x-large;
 }
@@ -99,8 +102,6 @@
   color: whitesmoke;
   margin-top: 20px;
   border: none;
-  text-transform: uppercase;
-  font-weight: normal;
 }
 #link{
   font-family: Verdana, Geneva, Tahoma, sans-serif;

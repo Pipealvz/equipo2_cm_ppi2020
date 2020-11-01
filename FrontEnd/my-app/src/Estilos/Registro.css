@@ -1,6 +1,6 @@
 
 .App-r{
-  background-image: url(../Images_proyectos/background-doctor.jpg);
+  background-image: url(../Images_proyectos/bg-doctor-inicio-sesion-movil.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
@@ -14,9 +14,10 @@
 
 /*BLOQUE INICIO SESIÓN*/
 #Bloque_registro{
-  border-radius: 10px;
   text-align: left;
   border-width: 1px;
+  box-shadow: 2px 2px 5px #999;
+  background-color: white;
 }
 #Texto_registro{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,49 +28,64 @@
   text-transform: uppercase;
   font-size: x-large;
 }
+/*INPUT-ZONE*/
 #input_Password{
-  border-radius: 5px;
-  background-color: rgba(213, 228, 250, 0.548);
+  background-color: white;
   width: 100%;
   height: 100%; 
   border: none;
   border-bottom: 1px solid;
   margin-bottom: 0px;
+  transition: all .3s;
 }
-
 #input_Email{
-  border-radius: 5px;
-  background-color: rgba(213, 228, 250, 0.548);
+  background-color: white;
   border: none;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid;
   margin-bottom: 0px;
+  transition: all .3s;
 }
 #input_Name{
-  border-radius: 5px;
-  background-color: rgba(213, 228, 250, 0.548);
+  background-color: white;
   border: none;
   width: 100%; 
   height: 100%;
   border-bottom: 1px solid;
   margin-bottom: 0px;
+  transition: all .3s;
 }
-
-
+/*INPUT-ZONE-END*/
+/*INPUT-EFECT-ZONE*/
 .label{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  opacity: 1;
   color: gray;
-  font-size: small;
-  text-transform: uppercase;
-  transform: translateY(-2.5em);
+  transform: translateY(-1.5em);
   transform-origin: 0 0;
   transition: all .3s;
-  margin-bottom: 0px;
 }
-
+.form-control:focus + .label,
+.form-control:not(:placeholder-shown) + .label
+{
+  transform: translateY(-2.6em) scale(.8);
+  color: rgb(28, 117, 241);
+}
+.form-control::placeholder{
+  color: transparent;
+}
+.form-control:valid:focus{
+  border-color: green;
+}
+.form-control:invalid:focus{
+  border-color: red;
+}
+/*INPUT-EFECT-ZONE-END*/
 .Link_sesion{
   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
 }
 #btn_registrar{
   background-color: rgba(95, 97, 100, 0.719);

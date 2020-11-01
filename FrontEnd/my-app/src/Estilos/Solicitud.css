@@ -3,14 +3,17 @@
 }
 /*BLOQUE SOLICITUD*/
 #Bloque_solicitud{
+    text-align: left;
     background-color: white;
-    color: rgb(28, 117, 241);
-    border-style: solid;    
-    border-radius: 15px;
-    height: auto;
+    box-shadow: 2px 2px 5px #999;
     display: inline-block;
-    border-width: 1px;
-    justify-content: center;
+}
+#Texto_solicitud{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: x-large;
+    margin: 30px 0px 30px 0px;
 }
 /*BTN-FORM-BLOCK*/
 #btn-farm{

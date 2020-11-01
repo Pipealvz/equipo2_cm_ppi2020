@@ -6,48 +6,46 @@ import Footer from './Footer';
 import '../Estilos/Registro.css';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+/*IMPORT-IMAGES*/
+import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 class Registro extends React.Component {
     render() {
         return (
             <div className="App-r">
-                <div className="container-fluid vh-100" id="container">
-                    <div className="row vh-100 justify-content-start">
-                        <div className="col-12 col-lg-6 align-self-end" id="Bloque_registro">
+                <div className="container vh-100" id="container">
+                    <div className="row vh-100 justify-content-end">
+                        <div className="col-12 col-lg-4 align-self-center" id="Bloque_registro">
+                            <img src={logo_domiapp} className="img-fluid mt-5 mb-5"/>
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <hr />
                             <br />
                             <form>
                                 <div className="form-group">
                                     <input
-                                        type="text"
+                                        type="name"
                                         name="nombre"
                                         id="input_Name"
                                         className="form-control"
                                         required
-                                        placeholder=""
+                                        placeholder="Nombre"
                                     />
                                     <label className="label">Nombre</label>
-                                </div>
-                                <div className="form-group">
                                     <input
                                         type="email"
                                         name="correo"
                                         id="input_Email"
                                         className="form-control"
                                         required
-                                        placeholder=""
+                                        placeholder="Correo"
                                     />
                                     <label className="label">Correo</label>
-                                </div>
-                                <div className="form-group">
                                     <input
                                         type="password"
                                         name="contrasena"
                                         id="input_Password"
                                         className="form-control"
                                         required
-                                        placeholder=""
+                                        placeholder="Contraseña"
                                     />
                                 <label className="label">Contraseña</label>
                                 </div>
@@ -56,16 +54,17 @@ class Registro extends React.Component {
                                 </button>
                                 <hr/>
                                 <div className="Link_sesion">
-                                    <p>¿Ya tienes cuenta? <Link id="link" to="/">
-                                        ¡¡Inicia Sesión!!</Link>
-                                    </p>
+                                    <span className="Link_sesion">¿Ya tienes cuenta? <Link id="link" to="/">
+                                        ¡Inicia Sesión!</Link>
+                                    </span>
                                 </div>
                             </form>
                             <br />
                         </div>
                     </div>
                 </div>
-            </div>
+                <Footer/>
+                </div>
         );
     }
 }
