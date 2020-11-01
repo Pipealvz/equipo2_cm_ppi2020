@@ -67,7 +67,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
 
-                        <div className="row justify-content-around" id="footer-copy">
+                        <div className="justify-content-between" id="footer-copy">
                             <div className="align-self-center">
                                 <img src={icon_domiApp} alt="" />
                             </div>
