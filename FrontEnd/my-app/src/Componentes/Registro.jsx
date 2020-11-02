@@ -15,7 +15,7 @@ class Registro extends React.Component {
                 <div className="container vh-100" id="container">
                     <div className="row vh-100 justify-content-end">
                         <div className="col-12 col-lg-4 align-self-center" id="Bloque_registro">
-                            <img src={logo_domiapp} className="img-fluid mt-5 mb-5"/>
+                            <img src={logo_domiapp} className="img-fluid mt-5 mb-5" />
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <hr />
                             <br />
@@ -47,12 +47,12 @@ class Registro extends React.Component {
                                         required
                                         placeholder="Contraseña"
                                     />
-                                <label className="label">Contraseña</label>
+                                    <label className="label">Contraseña</label>
                                 </div>
                                 <button className="btn btn-block mt-4" type="submit" id="btn_registrar">
                                     <strong>Crear cuenta</strong>
                                 </button>
-                                <hr/>
+                                <hr />
                                 <div className="Link_sesion">
                                     <span className="Link_sesion">¿Ya tienes cuenta? <Link id="link" to="/">
                                         ¡Inicia Sesión!</Link>
@@ -63,8 +63,7 @@ class Registro extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Footer/>
-                </div>
+            </div>
         );
     }
 }

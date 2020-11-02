@@ -40,7 +40,7 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
   transition: all .3s;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.1em);
 }
 .btn-sol:focus{
   outline: none;
@@ -58,7 +58,7 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
   transition: all .3s;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.1em);
 }
 .btn-aju:focus{
   outline: none;
@@ -76,7 +76,7 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
   transition: all .3s;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.1em);
 }
 .btn-fav:focus{
   outline: none;
@@ -94,7 +94,7 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
   transition: all .3s;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.1em);
 }
 .btn-his:focus{
   outline: none;
@@ -112,7 +112,7 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.589);
   transition: all .3s;
-  transform: translateY(-0.25em);
+  transform: translateY(-0.1em);
 }
 .btn-not:focus{
   outline: none;
