@@ -16,6 +16,14 @@ class Footer extends React.Component {
             <footer>
                 <div className="justify-content-center">
                     <div className="justify-content-center">
+
+                    <div className="" id="footer-copy">
+                            <div className="align-self-center">
+                                <img src={icon_domiApp} alt="" />
+                            </div>
+                            <div className="align-self-center">© DomiApp 2020</div>
+                    </div>
+                        
                         <div className="row-fluid" id="more-info">
                             <button id="text-more" className="btn btn-light text-uppercase text-dark" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                                 Redes sociales
@@ -52,24 +60,18 @@ class Footer extends React.Component {
 
                         <div className="justify-content-center">
                             <div className="row-fluid" id="more-info">
-                                <button id="text-more" className="btn btn-light text-uppercase text-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <button id="text-more" className="btn btn-dark text-uppercase text-white" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                     Más información
                         </button>
                                 <div className="collapse" id="collapseExample">
-                                    <div className="card card-body">
-                                        <p className="text-dark text-justify">
+                                    <div className="card card-body bg-dark">
+                                        <p className="text-white text-justify">
                                             DomiApp es un aplicativo que ayude a los usuarios discapacitados y apoya a las entidades de salud y a los usuarios que las componen, de una forma más eficaz y sencilla en la entrega de los productos farmacéuticos facilitándoles una plataforma para solicitar y reclamar sus medicamentos, y así despejar las multitudes que se presentan al momento de reclamar medicinas, evitando esfuerzos innecesarios.
                                     </p></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="" id="footer-copy">
-                            <div className="align-self-center">
-                                <img src={icon_domiApp} alt="" />
-                            </div>
-                            <div className="align-self-center">© DomiApp 2020</div>
-                        </div>
                     </div>
                 </div>
             </footer>

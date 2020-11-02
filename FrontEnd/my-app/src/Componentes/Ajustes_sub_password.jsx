@@ -12,43 +12,58 @@ import '../Estilos/Ajustes.css';
 class Ajustes_sub_pass extends React.Component {
         render() {
                 return (
-                        <div className="App">
+                        <div className="App-s-r">
                                 <Navbar id="header_global" />
                                 <br />
-                                <div className="container vh-100">
+                                <div className="container">
                                         <div className="row justify-content-center">
-                                                <div className="col-12">
-                                                        <div className="mt-1 col-10" id="Bloque_ajustes">
+                                        <div className="mb-5 col-12 col-lg-5" id="Bloque_ajustes">
                                                                 <h1 className="text-left mt-4" id="Texto_inicio_sub">Cambiar contraseña</h1>
                                                                 <hr />
-                                                                <br />                                                                
-                                                                <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box" placeholder="Ingrese contraseña actual:"></input>
+                                                                <div className="mt-5"></div>
+                                                                <div className="form-group">
+                                                                     <input
+                                                                                type="password"
+                                                                                name="contraseña"
+                                                                                id="i-email"
+                                                                                className="form-control"
+                                                                                required
+                                                                                placeholder="actual"
+                                                                     />
+                                                                     <label for="name" className="form-label">Contraseña actual</label>
+                                                                     <div className="mt-3"></div>
+                                                                     <input
+                                                                                type="password"
+                                                                                name="contraseña"
+                                                                                id="i-email"
+                                                                                className="form-control"
+                                                                                required
+                                                                                placeholder="contraseña"
+                                                                     />
+                                                                <label for="name" className="form-label">Nueva contraseña</label>
+                                                                <div className="mt-3"></div>
+                                                                     <input
+                                                                                type="password"
+                                                                                name="contrasena"
+                                                                                id="i-pass"
+                                                                                className="form-control"
+                                                                                required
+                                                                                placeholder="contraseña"
+                                                                     />
+                                                                <label for="password" className="form-label">Confirmar nueva contraseña</label>
                                                                 </div>
-                                                                <br />
-                                                                <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex standard-secondary" id="text-box" placeholder="Nueva contraseña:" required></input>
-                                                                </div>
-                                                                <br />
-                                                                <div class="form-group mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                <input type="password" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box" placeholder="Verificar nueva contraseña:" required></input>
-                                                                </div>
-                                                                <br />
+                                                                <div className="mt-3"></div>
                                                                 <div className="row justify-content-center mt-0">
-                                                                        <Link className="col-lg-4 col-8 btn btn-primary btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Aceptar</Link>
+                                                                        <Link className="col-lg-10 col-10 btn btn-dark btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Aceptar</Link>
                                                                 </div>
-                                                                <br/>
+                                                                <div className="mt-3"></div>
                                                                 <div className="row justify-content-center mt-0" to="/Ajustes">
-                                                                <Link className="col-lg-4 col-8 btn btn-primary btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Cancelar</Link>
+                                                                <Link className="col-lg-10 col-10 btn btn-danger btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Cancelar</Link>
                                                                 </div>
-                                                                <br />
-                                                                <h6></h6>
-                                                                <br />
+                                                                <div className="mb-5"></div>
                                                         </div>
                                                 </div>
                                         </div>
-                                </div>
-                                <Footer />
                         </div>
                 );
         }

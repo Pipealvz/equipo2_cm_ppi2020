@@ -49,7 +49,7 @@ class Registro extends React.Component {
                                     />
                                     <label className="label">Contraseña</label>
                                 </div>
-                                <button className="btn btn-block mt-4" type="submit" id="btn_registrar">
+                                <button className="btn btn-block mt-4 btn-dark" type="submit" id="btn_registrar">
                                     <strong>Crear cuenta</strong>
                                 </button>
                                 <hr />

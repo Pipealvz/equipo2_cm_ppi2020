@@ -13,22 +13,14 @@ class Notificaciones extends React.Component {
         return (
             <div className="App-n">
                 <Navbar id="header_global" />
-                <br/>
-                <div className="container vh-100">
-                    <div className="row">
-                        <div className="col">
-                            <div className="col-12">
-                                <h1 className="text-center mt-4" id="Texto_inicio">Notificaciones</h1>
-                                <hr/>
-                                <br/>
-                                <div className="row mt-2 col-sm-12 col-lg-8" id="Bloque_notificacion">
-                                    <p className="mt-2 text-not">Farmacia Athena SS</p>
-                                    <p className="text-not-2">¡Tú pedido está en camino!, recuerda estar atento en todo momento</p>
-                                    <br />
-                                    <h6>
-                                    </h6>
-                                    <br />
-                                </div>
+                <div className="mt-5"></div>
+                <div className="container">
+                    <div className="row vh-100 mb-5 justify-content-center">
+                        <div className="justify-content-center col-12 col-lg-5 align-self-start" id="Bloque_solicitud">
+                            <h1 className="text-center" id="Texto_solicitud">Notificaciones</h1>
+                            <hr />
+                            <div className="row text-justify col-11 col-lg-5">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus tenetur illo neque at eos, iure, rerum eveniet ea, aliquam officiis culpa ipsa dignissimos esse accusamus. Magni accusamus quaerat amet illum.
                             </div>
                         </div>
                     </div>

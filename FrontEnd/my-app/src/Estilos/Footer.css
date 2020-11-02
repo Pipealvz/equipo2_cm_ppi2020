@@ -11,6 +11,8 @@
   color: rgb(253, 253, 253);
   width: 100%;
   border-radius: 0;
+  font-weight: bold;
+  
 }#text-more:focus{
   outline: none;
 }

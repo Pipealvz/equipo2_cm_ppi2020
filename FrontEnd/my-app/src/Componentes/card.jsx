@@ -7,7 +7,7 @@ export default class Card extends Component {
         return (
             <>
                 {this.props.data.map((element) => (
-                    <div className="col-lg-4 col-md-6 col-sm-12" key={element.id}>
+                    <div className="col-lg-4 col-md-6 col-12" key={element.id}>
                         <div className="card-body">
                             <p time="" className="card-text">{this.props.time}</p>
                             <p farm="" className="card-text">{this.props.farm}</p>

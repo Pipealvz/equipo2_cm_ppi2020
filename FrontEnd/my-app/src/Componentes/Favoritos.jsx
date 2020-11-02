@@ -1,6 +1,6 @@
 /*IMPORT-REACT*/
 import React from 'react';
-import '../Estilos/Solicitud.css';
+import '../Estilos/Favoritos.css';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
@@ -11,41 +11,36 @@ import data from "../data/card.json";
 /*IMPORT-IMAGES*/
 
 
-class Solicitud extends React.Component {
-        constructor() {
-                super();
-                this.state = {
-                    data: data
-                };
-            }
-            render() {
-                return (
-                    <div className="App-s">
-                        <Navbar id="header_global" />
-                        <br />
-                        <div className="container vh-100">
-                            <div className="row">
-                                <div className="col-12">
-                                    <div className="" id="">
-                                        <h1 className="text-center mt-4" id="Texto_inicio">Favoritos</h1>
-                                        <hr/>
-                                        <br/>
-                                        <div className="mt-1 col-12" id="Bloque_Historial">
-                                            <br />
-                                            <div className="col-lg-12 col-md-12 col-sm-6">
-                                            <Card className="text" time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
-                                            </div>
-                                            <h6>
-                                            </h6>
-                                            <br />
-                                        </div>
-                                    </div>
+class Favoritos extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            data: data
+        };
+    }
+    render() {
+        return (
+            <div className="App-s">
+                <Navbar id="header_global" />
+                <div className="mt-5"></div>
+                <div className="container">
+                    <div className="row mb-5 justify-content-center">
+                        <div className="col-lg-8 col-12" id="">
+                            <h1 className="text-center mt-4" id="Texto_inicio">Favoritos</h1>
+                            <hr />
+                            <div className="mt-5"></div>
+                            <div className="mt-1 col-12" id="Bloque_Historial">
+                                <div className="col-lg-12 col-md-12 col-sm-6" id="image">
+                                    <Card time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
                                 </div>
+                                <div className="mb-2"></div>
                             </div>
                         </div>
-                        <Footer />
                     </div>
-                );
-            }
-        }
-export default Solicitud;
+                </div>
+                <Footer />
+            </div>
+        );
+    }
+}
+export default Favoritos;

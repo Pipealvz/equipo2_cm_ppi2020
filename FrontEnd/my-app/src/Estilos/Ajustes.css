@@ -2,17 +2,13 @@
     text-align: center;
 }
 
-#Bloque_ajustes{
-    background-color: white;
-    color: rgb(28, 117, 241);
-    border-style: solid;    
-    border-radius: 15px;
-    height: auto;
-    display: inline-block;
-    border-width: 1px;
-    justify-content: center;
+#Texto_inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: x-large;
+    margin: 30px 0px 30px 0px;
 }
-
 /*BTN-FORM-BLOCK*/
 #Texto_inicio_sub{
     text-align: left;
@@ -25,7 +21,7 @@
     border: none;
 }
 .btn-edit:hover{
-    background-color: rgba(169, 191, 221, 0.788);
+    background-color: rgba(20, 20, 20, 0.116);
     border-radius: 5px;
 }
 .btn-edit:focus{
@@ -43,6 +39,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
     opacity: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
 }
 
 #text-add-form{
@@ -63,8 +62,11 @@
     margin-top: -20px;
 }
 
-#btn_solicitar{
+#btn_off{
     margin-top: 10px;
+}
+#btn_off:hover{
+    text-decoration: none;
 }
 
 #text-drop{
@@ -74,7 +76,7 @@
 }
 
 #dropmenu{
-    border: 1px solid rgb(28, 117, 241);
+    border: 1px solid gray;
+    border-radius: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-

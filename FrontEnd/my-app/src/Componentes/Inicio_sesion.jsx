@@ -43,7 +43,7 @@ class Inicio_sesion extends React.Component {
                                                                 <label for="password" className="form-label">Contraseña</label>
                                                                 </div>
                                                                 <Link id="link" to="/Solicitud"> 
-                                                                <button className=" btn btn-primary btn-block mt-0" type="submit" id="btn_inicio">
+                                                                <button className=" btn btn-dark btn-block mt-0" type="submit" id="btn_inicio">
                                                                  <strong>Iniciar sesión</strong>
                                                                 </button>
                                                                 <hr/>

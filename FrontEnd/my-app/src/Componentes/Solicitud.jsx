@@ -15,13 +15,13 @@ class Solicitud extends React.Component {
                 return (
                         <div className="App-s">
                                 <Navbar id="header_global"/>
-                                <br />
+                                <div className="mt-5"></div>
                                 <div className="container">
                                         <div className="row mb-5 justify-content-center">
                                                         <div className="col-12 col-lg-5 align-self-start" id="Bloque_solicitud">
                                                                 <h1 className="text-center" id="Texto_solicitud">Solicitudes</h1>
                                                                 <hr />
-                                                                <br />
+                                                                <div className="mt-5"></div>
                                                                 <div class="row justify-content-center btn-group" id="btn-farm">
                                                                         <select class="text-left col-11 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
                                                                         <option className="sub-item-big" disabled selected>Seleccionar farmacia</option>
@@ -47,12 +47,12 @@ class Solicitud extends React.Component {
                                                                 <br/>
                                                                 <br />
                                                                 <div class="row justify-content-center btn-group" id="input-farm">
-                                                                        <button className="justify-content-around mt-0 col-lg-4 d-flex" id="btn-add-form">Adjunte la fórmula<img className="" src={btn_form} /></button>
+                                                                        <button className="justify-content-around mt-0 col-lg-5 d-flex" id="btn-add-form">Adjunte la fórmula<img className="" src={btn_form} /></button>
                                                                 </div>
                                                                 <br />
                                                                 <br/>
                                                                 <div className="row justify-content-center mt-0">
-                                                                        <button className="col-lg-7 col-8 btn btn-primary btn-block" type="submit" id="btn_solicitar">
+                                                                        <button className="col-lg-10 col-8 btn btn-dark btn-block" type="submit" id="btn_solicitar">
                                                                                 <strong>Solicitar</strong>
                                                                         </button>
                                                                 </div>
