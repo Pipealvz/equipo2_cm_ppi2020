@@ -1,3 +1,10 @@
 [
-  
+  {
+    "id_farmacia": 1,
+    "correo": "",
+    "nit": "",
+    "nombre": "",
+    "rol": "",
+    "contraseña": ""
+  }
 ]
