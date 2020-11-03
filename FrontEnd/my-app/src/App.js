@@ -13,6 +13,7 @@ function App () {
                                 <div className="row">
                                         <div className="col"></div>
                                         <div className="col-6 border">
+                                                <div className="row justify-content-center text-dark text-uppercase">Desde acá empezó todo...</div>
                                                 <h5 className="text-center mt-4">Iniciar Sesión</h5>
                                                 <br />
                                                 <form >
