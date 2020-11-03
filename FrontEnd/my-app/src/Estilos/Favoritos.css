@@ -1,3 +1,9 @@
 .App-s{
     text-align: center;
 }
+
+#bandeja_fav{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.185);
+}

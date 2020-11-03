@@ -25,12 +25,12 @@ class Favoritos extends React.Component {
                 <div className="mt-5"></div>
                 <div className="container">
                     <div className="row mb-5 justify-content-center">
-                        <div className="col-lg-8 col-12" id="">
+                        <div className="col-lg-10 col-12" id="">
                             <h1 className="text-center mt-4" id="Texto_inicio">Favoritos</h1>
                             <hr />
                             <div className="mt-5"></div>
-                            <div className="mt-1 col-12" id="Bloque_Historial">
-                                <div className="col-lg-12 col-md-12 col-sm-6" id="image">
+                            <div className="mt-1 col-12 text-justify" id="bandeja_fav">
+                                <div className="col-lg-12 col-md-12 col-sm-6">
                                     <Card time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
                                 </div>
                                 <div className="mb-2"></div>

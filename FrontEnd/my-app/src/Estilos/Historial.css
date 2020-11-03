@@ -5,11 +5,9 @@
 #Bloque_Historial{
     height: auto;
     display: inline-block;
-    border-width: 1px;
-    background-color: rgba(200, 220, 250, 0.753);;
-    color: rgb(28, 117, 241);
-    border-style: solid;    
-    border-radius: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.185);
     text-align: left;
     justify-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
