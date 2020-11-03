@@ -52,3 +52,7 @@
 .info{
   text-align: justify;
 }
+
+.card-body{
+  border-radius: 0;
+}

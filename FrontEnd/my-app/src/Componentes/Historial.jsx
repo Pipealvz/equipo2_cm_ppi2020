@@ -1,7 +1,6 @@
 /*IMPORT-REACT*/
 import React from "react";
 import '../Estilos/Historial.css';
-import { Link } from 'react-router-dom';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/

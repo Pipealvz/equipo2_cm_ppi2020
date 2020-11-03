@@ -1,7 +1,6 @@
 /*IMPORT-REACT*/
 import React from 'react';
 import '../Estilos/Solicitud.css';
-import { Link } from 'react-router-dom';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
@@ -62,7 +61,9 @@ class Solicitud extends React.Component {
                                                         </div>
                                                 </div>
                                         </div>
+                                <div className="align-self-end">
                                 <Footer />
+                                </div>
                         </div>
                 );
         }

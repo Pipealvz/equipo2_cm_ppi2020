@@ -67,7 +67,8 @@ class Footer extends React.Component {
                                     <div className="card card-body bg-dark">
                                         <p className="text-white text-justify">
                                             DomiApp es un aplicativo que ayude a los usuarios discapacitados y apoya a las entidades de salud y a los usuarios que las componen, de una forma más eficaz y sencilla en la entrega de los productos farmacéuticos facilitándoles una plataforma para solicitar y reclamar sus medicamentos, y así despejar las multitudes que se presentan al momento de reclamar medicinas, evitando esfuerzos innecesarios.
-                                    </p></div>
+                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

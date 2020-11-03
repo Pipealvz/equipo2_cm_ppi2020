@@ -19,9 +19,11 @@ class Notificaciones extends React.Component {
                         <div className="justify-content-center col-12 col-lg-5 align-self-start" id="Bloque_solicitud">
                             <h1 className="text-center" id="Texto_solicitud">Notificaciones</h1>
                             <hr />
-                            <div className="row text-justify col-11 col-lg-5">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus tenetur illo neque at eos, iure, rerum eveniet ea, aliquam officiis culpa ipsa dignissimos esse accusamus. Magni accusamus quaerat amet illum.
+                            <div className="col-12 col-lg-12 text-justify" id="bandeja_not">
+                                <p clasName="title-not">Farmacia Athena SS</p>
+                                <p className="text-farm">¡Tu pedido ya fue despachado! recuerda estar atento.</p>
                             </div>
+                            <div className="mt-5"></div>
                         </div>
                     </div>
                 </div>

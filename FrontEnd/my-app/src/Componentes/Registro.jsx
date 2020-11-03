@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 /*IMPORT-COMPONENTS*/
-import Footer from './Footer';
 import '../Estilos/Registro.css';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';

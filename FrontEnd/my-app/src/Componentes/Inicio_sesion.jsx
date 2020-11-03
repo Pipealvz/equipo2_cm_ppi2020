@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
 import '../Estilos/Inicio_sesion.css';
-import Footer from './Footer';
 /*IMPORT-IMAGES*/ 
 import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 

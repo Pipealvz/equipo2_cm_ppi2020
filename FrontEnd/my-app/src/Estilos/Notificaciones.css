@@ -25,3 +25,9 @@
     color: gray;
     text-align: justify;
 }
+
+#bandeja_not{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.185);
+}

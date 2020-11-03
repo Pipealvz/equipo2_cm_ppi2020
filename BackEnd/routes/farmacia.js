@@ -35,7 +35,7 @@ router.get("/farmacia/:id", (req,res) => {
   if(estudianteEncontrado != undefined)
     res.status(200).json(farmaciaEncontrada)
   else
-    res.json(`El ID ${id} no existe`)
+    res.json(`La farmacia ${id} no existe`)
 })
 
 router.put("/farmacia/:id", (req,res) => {

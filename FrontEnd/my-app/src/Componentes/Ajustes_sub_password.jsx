@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
-import Footer from './Footer';
 import Navbar from './Navbar-btn';
 import '../Estilos/Ajustes.css';
 /*IMPORT-IMAGES*/
