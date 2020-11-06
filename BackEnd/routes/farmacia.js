@@ -1,7 +1,7 @@
 const {Router} = require("express")
 const router = Router()
 const fs = require("fs")
-const FileFarmacia = fs.readFileSync('./farmacias.json', 'utf-8')
+const FileFarmacia = fs.readFileSync('./farmacia.js', 'utf-8')
 const JSONFarmacia = JSON.parse(FileFarmacia)
 
 router.get("/", (req, res) => {
