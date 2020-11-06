@@ -10,6 +10,10 @@ app.use(express.json())
 //Routes
 app.use("/api", require("./routes/farmacia"))
 //app.use("/api", require("./routes/pedidos"))
+//app.use("/api", require("./routes/historial"))
+//app.use("/api/usuarios", require("./routes/usuario_cliente"))
+//app.use("/api", require("./routes/favorito"))
+//app.use("/api", require("./routes/notificaciones"))
 
 app.get("/", (req, res) => {
   res.send("Equipo-2-cm-ppi")
