@@ -40,4 +40,14 @@ router.post('/pedido',(req,res)=>{
   })
 })
 
+router.delete('/pedido/:id', (req, res) => {
+  const { id } = req.params;
+  mysqlConnection.query('DELETE FROM pedido WHERE id_pedido = ?', [id], (err, rows, fields) => {
+    if(!err) {
+      res.json({status: 'Pedido eliminado :C!'});
+    } else {
+      console.log(err);
+    }
+  });
+});
 module.exports = router;
