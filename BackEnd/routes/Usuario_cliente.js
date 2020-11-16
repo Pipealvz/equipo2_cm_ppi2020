@@ -26,18 +26,20 @@ router.get('/usuario', (req, res) => {
     })
   })
 
-  router.get('/usuarios',(req,res)=>{
+  router.post('/usuario',(req,res)=>{
     const {
       correo,
       contraseña,
       nombre,
-      apellido
-    } = req.body
-    var NewUser= [
-      correo,
-      contraseña,
-      nombre,
-      apellido
+      apellido,
+      rol
+  } = req.body
+  var NewUser = [
+    correo,
+    contraseña,
+    nombre,
+    apellido,
+    rol
     ];
       mysqlConnection.query('INSERT INTO usuario_cliente (correo, contraseña, nombre, apellido, rol) VALUES (?, ?, ?, ?, Usuario)',(err, rows, fields)=>{
         if (!err) {
