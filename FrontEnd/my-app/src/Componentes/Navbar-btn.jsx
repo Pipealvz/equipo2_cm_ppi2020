@@ -12,7 +12,7 @@ import icon_aju from '../Images_proyectos/btn-icon-aju.png';
 import icon_his from '../Images_proyectos/btn-icon-his.png';
 import icon_domiApp from '../Images_proyectos/Logo_domiApp-icon.png';
 
-class Navbar_btn extends React.Component {
+export default class Navbar_btn extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-light sticky-top">
@@ -72,4 +72,3 @@ class Navbar_btn extends React.Component {
     )
   }
 }
-export default Navbar_btn;
