@@ -25,7 +25,7 @@ import Ajustes_sub_mail from '../Componentes/Ajustes_sub_mail';
 import Inicio_festivo from '../Componentes_festivos/Inicio_sesion_halloween';
 import Registro_festivo from '../Componentes_festivos/Registro_halloween';
 
-function Rutas() {
+export default function Rutas() {
     return (
         <BrowserRouter>
             <Switch>
@@ -55,4 +55,3 @@ function Rutas() {
         </BrowserRouter>
     )
 }
-export default Rutas;
