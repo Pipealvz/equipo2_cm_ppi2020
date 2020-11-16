@@ -7,12 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-IMAGNES*/
 import icon_not from '../Images_proyectos/btn-icon-not.png';
 import icon_fav from '../Images_proyectos/btn-icon-fav.png';
-import icon_sol from '../Images_proyectos/btn-icon-sol.png';
+import icon_ped from '../Images_proyectos/btn-icon-ped.png';
 import icon_aju from '../Images_proyectos/btn-icon-aju.png';
 import icon_his from '../Images_proyectos/btn-icon-his.png';
 import icon_domiApp from '../Images_proyectos/Logo_domiApp-icon.png';
 
-class Navbar_btn_farm extends React.Component {
+export default class Navbar_btn_farm extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md navbar-light sticky-top">
@@ -25,8 +25,8 @@ class Navbar_btn_farm extends React.Component {
             <li className="nav-item active nav-link" id="nav-sol">
               <NavLink to="/Solicitud_f" className="Link-btn">
                 <button className="btn-sol">
-                  <div className="img-sol"><img src={icon_sol} /></div>
-                  <div className="text-sol">Solicitud</div>
+                  <div className="img-sol"><img src={icon_ped} /></div>
+                  <div className="text-sol">Pedidos</div>
                 </button>
               </NavLink>
             </li>
