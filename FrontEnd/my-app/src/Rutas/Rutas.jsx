@@ -9,6 +9,14 @@ import Favoritos from '../Componentes/Favoritos';
 import Historial from '../Componentes/Historial';
 import Ajustes from '../Componentes/Ajustes';
 import Notificaciones from '../Componentes/Notificaciones';
+/*FARMACIAS*/
+import Ajustes_f from '../Farmacias/Ajustes';
+import Historial_f from '../Farmacias/Historial';
+import Solicitud_f from '../Farmacias/Solicitud';
+import Notificacion_f from '../Farmacias/Notificaciones_f';
+import Ajustes_sub_name_f from '../Farmacias/Ajustes_sub_mail_farm';
+import Ajustes_sub_pass_f from '../Farmacias/Ajustes_sub_password_farm';
+import Ajustes_sub_mail_f from '../Farmacias/Ajustes_sub_mail_farm';
 /*IMPORT-SUB-COMPONENT*/
 import Ajustes_sub_name from '../Componentes/Ajustes_sub_name';
 import Ajustes_sub_pass from '../Componentes/Ajustes_sub_password';
@@ -32,6 +40,14 @@ function Rutas() {
                 <Route exact path="/Ajustes/Editar_nombre" component={Ajustes_sub_name} />
                 <Route exact path="/Ajustes/Editar_correo" component={Ajustes_sub_mail} />
                 <Route exact path="/Ajustes/Editar_contraseña" component={Ajustes_sub_pass} />
+
+                <Route exact path="/Ajustes/Editar_nombre_farm" component={Ajustes_sub_name_f} />
+                <Route exact path="/Ajustes/Editar_correo_farm" component={Ajustes_sub_mail_f} />
+                <Route exact path="/Ajustes/Editar_contraseña_farm" component={Ajustes_sub_pass_f} />
+                <Route exact path="/Solicitud_f" component={Solicitud_f} />
+                <Route exact path="/Ajustes_f" component={Ajustes_f} />
+                <Route exact path="/Historial_f" component={Historial_f} />
+                <Route exact path="/Notificacion_f" component={Notificacion_f} />
 
                 <Route exact path="/_h" component={Inicio_festivo} />
                 <Route exact path="/Registro_h" component={Registro_festivo} />

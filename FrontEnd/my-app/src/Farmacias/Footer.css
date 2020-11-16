@@ -1,0 +1,58 @@
+/*BLOQUE FOOTER*/
+#footer-copy{
+    background-color: rgb(4, 41, 92);
+    color: whitesmoke;
+    width: auto;
+    border-radius: 0px;
+  }
+
+#text-more{
+  border: none;
+  color: rgb(253, 253, 253);
+  width: 100%;
+  border-radius: 0;
+  font-weight: bold;
+  
+}#text-more:focus{
+  outline: none;
+}
+
+#red-social{
+  background-color: rgb(114, 111, 111);
+  border-radius: 0px;
+  border: none;
+}#text-social{
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  padding: 10px;
+}#text-social:focus{
+  outline: none;
+}
+
+.btn-social{
+  background-color: transparent;
+  border: none;
+  color: black;
+  display: block;
+  width: 5em;
+  height: 5em;
+}.btn-social:hover{
+  background-color: rgba(159, 165, 240, 0.37);
+  transition: all .3s;
+  transform: translateY(-0.25em);
+  border-radius: 50%;
+}.btn-social:focus{
+  outline: none;
+}
+
+.info{
+  text-align: justify;
+}
+
+.card-body{
+  border-radius: 0;
+}

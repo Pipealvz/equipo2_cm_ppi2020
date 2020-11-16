@@ -10,7 +10,7 @@ import icon_domiApp from '../Images_proyectos/Logo_domiApp-icon.png';
 /*IMPORT-COMPONENTS*/
 import '../Estilos/Footer.css';
 
-export default class Footer extends React.Component {
+class Footer extends React.Component {
     render() {
         return (
             <footer>
@@ -79,3 +79,4 @@ export default class Footer extends React.Component {
         );
     }
 }
+export default Footer;

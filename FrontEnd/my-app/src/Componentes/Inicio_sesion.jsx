@@ -7,8 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Estilos/Inicio_sesion.css';
 /*IMPORT-IMAGES*/ 
 import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
-
-class Inicio_sesion extends React.Component {
+/*IMPORT AXIOS { GET, POST, PUT, DELETE }*/
+import axios from 'axios';
+export default class Inicio_sesion extends React.Component {
         render(){
                 return (
                         <div className="App">
@@ -58,4 +59,3 @@ class Inicio_sesion extends React.Component {
                 );
         }
 }
-export default Inicio_sesion;

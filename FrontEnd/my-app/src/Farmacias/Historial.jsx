@@ -10,7 +10,7 @@ import Card from "../Componentes/card";
 import data from "../data/card.json";
 /*IMPORT-IMAGES*/
 
-export default class Historial extends React.Component {
+class Historial extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -55,3 +55,4 @@ export default class Historial extends React.Component {
         );
     }
 }
+export default Historial;

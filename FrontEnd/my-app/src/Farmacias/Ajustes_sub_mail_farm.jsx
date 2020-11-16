@@ -8,7 +8,7 @@ import Navbar from './Navbar-btn';
 import '../Estilos/Ajustes_subs.css';
 /*IMPORT-IMAGES*/
 
-export default class Ajustes_sub_mail extends React.Component {
+class Ajustes_sub_mail extends React.Component {
         render() {
                 return (
                         <div className="App-s-a">
@@ -29,7 +29,7 @@ export default class Ajustes_sub_mail extends React.Component {
                                                                                 required
                                                                                 placeholder="correo actual"
                                                                      />
-                                                                     <label for="name" className="form-label">Correo actual</label>
+                                                                     <label for="name" className="form-label">Correo farmacia</label>
                                                                      <div className="mt-3"></div>
                                                                      <input
                                                                                 type="email"
@@ -53,11 +53,11 @@ export default class Ajustes_sub_mail extends React.Component {
                                                                 </div>
                                                                 <div className="mt-3"></div>
                                                                 <div className="row justify-content-center mt-0">
-                                                                        <Link className="col-lg-10 col-10 btn btn-dark btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Aceptar</Link>
+                                                                        <Link className="col-lg-10 col-10 btn btn-dark btn-block" type="submit"  to="/Ajustes_f" id="btn_solicitar">Aceptar</Link>
                                                                 </div>
                                                                 <div className="mt-3"></div>
                                                                 <div className="row justify-content-center mt-0" to="/Ajustes">
-                                                                <Link className="col-lg-10 col-10 btn btn-danger btn-block" type="submit"  to="/Ajustes" id="btn_solicitar">Cancelar</Link>
+                                                                <Link className="col-lg-10 col-10 btn btn-danger btn-block" type="submit"  to="/Ajustes_f" id="btn_solicitar">Cancelar</Link>
                                                                 </div>
                                                                 <div className="mb-5"></div>
                                                         </div>
@@ -67,3 +67,4 @@ export default class Ajustes_sub_mail extends React.Component {
                 );
         }
 }
+export default Ajustes_sub_mail;
