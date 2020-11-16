@@ -63,4 +63,3 @@ export default class Navbar_btn_farm extends React.Component {
     )
   }
 }
-export default Navbar_btn_farm;
