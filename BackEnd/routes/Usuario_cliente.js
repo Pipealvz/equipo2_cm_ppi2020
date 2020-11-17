@@ -34,7 +34,7 @@ router.get('/usuario', (req, res) => {
       apellido,
       rol
   } = req.body
-  var NewUser = [
+  var newUser = [
     correo,
     contraseña,
     nombre,

@@ -4,7 +4,7 @@ const morgan = require("morgan")
 const app = express()
 
 app.get('/api',(req,res) => {
-  res.send("URL: /farmacia")
+  res.send("URL: /farmacia /pedido /usuario")
 })
 
 //Middelwares
