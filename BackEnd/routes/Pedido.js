@@ -29,22 +29,21 @@ router.get('/pedido/:id', (req, res) => {
   });
 
 router.post('/pedido',(req,res)=>{
-   const {documento, documento_formula, id_usuario, nombre_farmacia} = req.body;
-  let newpedido = [documento, documento_formula, id_usuario, nombre_farmacia];
-  mysqlConnection.query('INSERT INTO pedido (documento, documento_formula, id_usuario, nombre_farmacia) VALUES (?,?,?,?)',(err, results, fields)=>{
-    if(!err){
-      return console.error(err.message)
-    }else{
-      res.json({message: "Pedido añadido!"})
-    }
-  })
+const {documento, documento_formula, id_usuario, nombre_farmacia} = req.body;
+let datauser = [documento, documento_formula, id_usuario, nombre_farmacia];
+mysqlConnection.query('INSERT INTO pedido (documento, documento_formula, id_usuario, nombre_farmacia) VALUES (?,?,?,?)',datauser,(err, results, fields)=>{
+  if(err){
+    return console.error(err.message)
+  }
+  res.json({ mensaje:`Pedido añadido <[(:D-|-[ !!`})
+})
 })
 
 router.delete('/pedido/:id', (req, res) => {
   const { id } = req.params;
   mysqlConnection.query('DELETE FROM pedido WHERE id_pedido = ?', [id], (err, rows, fields) => {
     if(!err) {
-      res.json({status: 'Pedido eliminado :C!'});
+      res.json({status: 'Pedido eliminado <[(×(-|-[ !!'});
     } else {
       console.log(err);
     }

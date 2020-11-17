@@ -26,7 +26,8 @@ router.get('/usuario', (req, res) => {
     })
   })
 
-  router.post('/usuario',(req,res)=>{
+// {  MÉTODO : "POST" }
+ /* router.post('/usuario',(req,res)=>{
     const {
       correo,
       contraseña,
@@ -34,20 +35,34 @@ router.get('/usuario', (req, res) => {
       apellido,
       rol
   } = req.body
-  var newUser = [
+    let dataUser = [
     correo,
     contraseña,
     nombre,
     apellido,
     rol
     ];
-      mysqlConnection.query('INSERT INTO usuario_cliente (correo, contraseña, nombre, apellido, rol) VALUES (?, ?, ?, ?, Usuario)',(err, rows, fields)=>{
+  let newUser = 'INSERT INTO `usuario_cliente`(`correo`, `contraseña`, `nombre`, `apellido`, `rol`) VALUES (?,?,?,?,?)';
+  mysqlConnection.query(newUser,dataUser,(err, rows, fields)=>{
         if (!err) {
-          return console.err(err.message)
+          return console.error(err.message)
         } else {
           res.json({mensaje: "Usuario añadido!! :)"})
-          console.log(rows)
         }
+        console.log(rows)
       })
+  })*/
+
+// {  MÉTODO : "POST" }
+  router.post('/usuario',(req,res)=>{
+   const {correo, contraseña, nombre, apellido, rol} = req.body;
+  let newUser = [correo, contraseña, nombre, apellido, rol];
+  mysqlConnection.query('INSERT INTO pedido (documento, documento_formula, id_usuario, nombre_farmacia) VALUES (?,?,?,?)',(err, results, fields)=>{
+    if(!err){
+      return console.error(err.message)
+    }else{
+      res.json({message: "Pedido añadido!"})
+    }
   })
+})
   module.exports = router;
