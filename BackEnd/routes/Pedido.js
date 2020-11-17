@@ -13,7 +13,7 @@ router.get('/pedido', (req, res) => {
       res.json(rows)
     })
   }catch(error){
-    res.status(503).json({mensaje : "Error en el servidor.", error : true})
+    res.status(503).json({mensaje : "Error en el servidor.", error : true});
   }
 })
 
