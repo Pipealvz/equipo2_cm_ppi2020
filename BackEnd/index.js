@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.use("/api", require("./routes/Farmacias"))
 app.use("/api", require("./routes/Pedido"))
 app.use("/api", require("./routes/Usuario_cliente"))
-
+app.use("/api", require("./routes/historial"))
 app.get("/", (req, res) => {
   res.send(" {  API : Equipo-2-cm-ppi }")
 })
