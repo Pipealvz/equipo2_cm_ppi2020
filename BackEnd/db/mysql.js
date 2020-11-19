@@ -1,5 +1,5 @@
 /*const mysql = require('mysql')
-ACÁ NO VAS A BORARR NADA CSM XD
+ACÁ NO VAS A BORARR NADA CSM
 });
 mysqlConnection.connect(function (err) {
   if (err) {

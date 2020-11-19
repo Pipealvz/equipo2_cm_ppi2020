@@ -3,6 +3,10 @@ const path = require("path")
 const morgan = require("morgan")
 const app = express()
 
+app.get("/", (req, res) => {
+  res.send(" {  API : Equipo-2-cm-ppi }")
+})
+
 app.get('/api',(req,res) => {
   res.send("URL: /farmacia /pedido /usuario")
 })
@@ -17,9 +21,6 @@ app.use("/api", require("./routes/Farmacias"))
 app.use("/api", require("./routes/Pedido"))
 app.use("/api", require("./routes/Usuario_cliente"))
 app.use("/api", require("./routes/historial"))
-app.get("/", (req, res) => {
-  res.send(" {  API : Equipo-2-cm-ppi }")
-})
 
 app.set("puerto", 8090)
 
