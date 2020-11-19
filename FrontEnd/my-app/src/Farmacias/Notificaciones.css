@@ -1,0 +1,33 @@
+.App-n{
+    text-align: center;
+}
+
+#Bloque_notificacion{
+    border: none;
+    height: auto;
+    display: inline-block;
+    border-width: 1px;
+    background-color: rgba(200, 220, 250, 0.781);;
+    border-radius: 15px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-not{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+}
+.text-not-2{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    text-align: justify;
+}
+
+#bandeja_not{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.185);
+}

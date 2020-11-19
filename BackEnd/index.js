@@ -3,20 +3,22 @@ const path = require("path")
 const morgan = require("morgan")
 const app = express()
 
+app.get('/api',(req,res) => {
+  res.send("URL: /farmacia /pedido /usuario")
+})
+
 //Middelwares
 app.use(morgan('dev'))
 app.use(express.json())
+app.use(express.static('public'));
 
 //Routes
-app.use("/api", require("./routes/farmacia"))
-//app.use("/api", require("./routes/pedidos"))
-//app.use("/api", require("./routes/historial"))
-//app.use("/api/usuarios", require("./routes/usuario_cliente"))
-//app.use("/api", require("./routes/favorito"))
-//app.use("/api", require("./routes/notificaciones"))
-
+app.use("/api", require("./routes/Farmacias"))
+app.use("/api", require("./routes/Pedido"))
+app.use("/api", require("./routes/Usuario_cliente"))
+app.use("/api", require("./routes/historial"))
 app.get("/", (req, res) => {
-  res.send("Equipo-2-cm-ppi")
+  res.send(" {  API : Equipo-2-cm-ppi }")
 })
 
 app.set("puerto", 8090)

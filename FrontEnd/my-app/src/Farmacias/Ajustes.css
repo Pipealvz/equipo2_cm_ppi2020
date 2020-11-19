@@ -1,0 +1,82 @@
+.App-a{
+    text-align: center;
+}
+
+#Texto_inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: x-large;
+    margin: 30px 0px 30px 0px;
+}
+/*BTN-FORM-BLOCK*/
+#Texto_inicio_sub{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: large;
+}
+.btn-edit{
+    background-color: transparent;
+    border: none;
+}
+.btn-edit:hover{
+    background-color: rgba(20, 20, 20, 0.116);
+    border-radius: 5px;
+}
+.btn-edit:focus{
+    outline: none;
+}
+
+#btn-text-farm{
+    border: 1px;
+    border-style: solid;
+}
+
+#text-box{
+    text-align: left;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    opacity: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+
+#text-add-form{
+    color: black;
+    text-align: left;
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-farm{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1px;
+}
+.a-add-form{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+#btn_off{
+    margin-top: 10px;
+}
+#btn_off:hover{
+    text-decoration: none;
+}
+
+#text-drop{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+
+#dropmenu{
+    border: 1px solid gray;
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

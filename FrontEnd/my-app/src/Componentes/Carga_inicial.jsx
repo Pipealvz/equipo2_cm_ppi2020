@@ -2,7 +2,7 @@
 import React from 'react';
 import '../Estilos/Carga_inicial.css';
 
-class Carga_inicial extends React.Component {
+export default class Carga_inicial extends React.Component {
     render() {
         return (
             <div className="container-fluid loading" id="loading">
@@ -16,5 +16,3 @@ class Carga_inicial extends React.Component {
         )
     }
 }
-
-export default Carga_inicial;

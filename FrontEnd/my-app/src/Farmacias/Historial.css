@@ -1,0 +1,22 @@
+.App-h{
+    text-align: center;
+}
+
+#Bloque_Historial{
+    height: auto;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.185);
+    text-align: left;
+    justify-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img-form{
+    margin-bottom: 10px;
+}
+
+@media(min-width: 700px){
+
+  }

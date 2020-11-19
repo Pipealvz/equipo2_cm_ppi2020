@@ -11,7 +11,7 @@ import data from "../data/card.json";
 /*IMPORT-IMAGES*/
 
 
-class Favoritos extends React.Component {
+export default class Favoritos extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -43,4 +43,3 @@ class Favoritos extends React.Component {
         );
     }
 }
-export default Favoritos;

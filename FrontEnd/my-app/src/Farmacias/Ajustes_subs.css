@@ -1,0 +1,20 @@
+.App-a{
+    text-align: center;
+    background-color: transparent;
+}
+
+#Bloque_ajustes{
+    text-align: left;
+    background-color: white;
+    box-shadow: 2px 2px 5px #999;
+    display: inline-block;
+}
+
+/*BTN-FORM-BLOCK*/
+#Texto_inicio_sub{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    font-size: x-large;
+    margin: 30px 0px 30px 0px;
+}

@@ -8,7 +8,7 @@ import Navbar from './Navbar-btn';
 import '../Estilos/Ajustes.css';
 /*IMPORT-IMAGES*/
 
-class Ajustes_sub_pass extends React.Component {
+export default class Ajustes_sub_pass extends React.Component {
         render() {
                 return (
                         <div className="App-s-r">
@@ -67,4 +67,3 @@ class Ajustes_sub_pass extends React.Component {
                 );
         }
 }
-export default Ajustes_sub_pass;
