@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const mysqlConnection = require('./../db/mysql');
+const mysqlConnection = require('./../db/mysql_pool');
 
 router.get('/usuario', (req, res) => {
     try {
@@ -26,28 +26,44 @@ router.get('/usuario', (req, res) => {
     })
   })
 
-  router.post('/usuario',(req,res)=>{
-    const {
-      correo,
-      contraseña,
-      nombre,
-      apellido,
-      rol
-  } = req.body
-  var NewUser = [
-    correo,
-    contraseña,
-    nombre,
-    apellido,
-    rol
-    ];
-      mysqlConnection.query('INSERT INTO usuario_cliente (correo, contraseña, nombre, apellido, rol) VALUES (?, ?, ?, ?, Usuario)',(err, rows, fields)=>{
-        if (!err) {
-          return console.err(err.message)
-        } else {
-          res.json({mensaje: "Usuario añadido!! :)"})
-          console.log(rows)
-        }
-      })
+// {  MÉTODO : "POST" }
+router.post('/usuario',(req,res)=>{
+  const {correo, contraseña, nombre, apellido, rol} = req.body;
+  let dataUser = [correo, contraseña, nombre, apellido, rol];
+mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, apellido) VALUES (?,?,?,?)',dataUser,(err, results, fields)=>{
+  if(err){
+    return console.error(err.message)
+  }
+  console.log(results);
+  res.json({ mensaje:`Registro exitoso!!`})
+})
+})
+
+// {  MÉTODO : "POST" }
+  /*router.post('/usuario',(req,res)=>{
+   const {correo, contraseña, nombre, apellido, rol} = req.body;
+  let newUser = [correo, contraseña, nombre, apellido, rol];
+  mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, apellido, rol) VALUES (?,?,?,?,Usuario)',(err, results, fields)=>{
+    if(!err){
+      return console.error(err.message)
+    }else{
+      console.log(results)
+      res.json({message: "Registro Exitoso!!"})
+    }
   })
-  module.exports = router;
+})*/
+
+
+// {  MÉTODO:"DELETE" }
+
+router.delete('/usuario/:id',(req,res)=>{
+  const {id} = req.params;
+    mysqlConnection.query('DELETE FROM pedido WHERE id_usuario = ?',[id],(err, row, fields)=>{
+      if(!err){
+        res.json({status: "Usuario eliminado!!"})
+      }
+      res.status(502).json({mensaje:"Error en la consulta!!"})
+    })
+})
+
+module.exports = router;

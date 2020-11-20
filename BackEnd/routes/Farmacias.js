@@ -1,8 +1,24 @@
 const { Router } = require('express');
 const router = Router();
-const mysqlConnection = require('./../db/mysql');
-
+const mysqlConnection = require('./../db/mysql_pool');
+//const multer = require('multer')
+//const {v4 : uuidv4} = require('uuid')
 //mysqlConnection.connect(); GENERA CONFLICTO, SOLO DEJAR LA CONEXIÓN DE mysql.js
+
+/*const cargador = multer({
+  storage : multer.diskStorage({
+    destination : (req, file, cb) => {
+      cb(null, path.join(__dirname,'../public/uploads'))
+    },
+    filename : (req, file, cb) => {
+       cb(null, uuidv4() + path.extname(file.originalname));
+    }
+  })
+})
+
+router.post('/farmacia/subir-formula', cargador.single('documento_formula') , (req, res) => {
+  res.json(req.file)
+})*/
 
 // { MÉTODO : "GET" }
 router.get('/farmacia', (req, res) => {
@@ -19,7 +35,7 @@ router.get('/farmacia', (req, res) => {
 })
 // { MÉTODO : "GET/ID" }
 router.get('/farmacia/:id', (req, res) => {
-     const {id} = req.params;
+  const {id} = req.params;
   mysqlConnection.query('SELECT * FROM farmacia WHERE id_farmacia =? ',[id],(err, rows, fields) => {
       if (!err) {
         res.json(rows[0]);
@@ -28,11 +44,12 @@ router.get('/farmacia/:id', (req, res) => {
       }
     });
   });
+  
 // {  MÉTODO : "POST" }
 router.post('/farmacia',(req,res)=>{
 const {nombre, correo, contraseña, nit, rol} = req.body;
 let datafarmacia = [nombre, correo, contraseña, nit, rol];
-let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit, rol) VALUES (?,?,?,?,?)`;
+let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit, rol) VALUES (?,?,?,?,Farmacia)`;
 mysqlConnection.query(newfarmacia, datafarmacia, (err, results, fields)=>{
   if(err){
     return console.error(err.message)
@@ -40,6 +57,7 @@ mysqlConnection.query(newfarmacia, datafarmacia, (err, results, fields)=>{
   res.json({ message:`Farmacia Creada!!`, })
 })
 })
+
 // {  MÉTODO : "PUT"  }
 router.put('/farmacia/:id', (req, res) => {
   const {nombre, correo, contraseña, nit, rol} = req.body;
@@ -53,6 +71,7 @@ router.put('/farmacia/:id', (req, res) => {
     }
   });
 });
+
 // {  MÉTODO : "DELETE"  }
 router.delete('/farmacia/:id', (req, res) => {
   const { id } = req.params;
