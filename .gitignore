@@ -1,5 +1,6 @@
-Backend/ .env
-Backend/ vercel.json
+Backend/.env
+Backend/vercel.json
+BackEnd/package-lock.json
 
 # Logs
 logs
