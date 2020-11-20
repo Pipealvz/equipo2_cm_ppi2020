@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.send(" {  API : Equipo-2-cm-ppi }")
 })
 
-app.set("puerto", 8090)
+app.set('port',process.env.PORT || 5000);
 
 app.listen(app.get("puerto"), () => {
   console.log(`Servidor corriendo en el puerto ${app.get("puerto")}`)
