@@ -2,6 +2,7 @@ const express = require("express")
 const path = require("path")
 const morgan = require("morgan")
 const app = express()
+require('dotenv').config()
 
 app.get("/", (req, res) => {
   res.send(" {  API : Equipo-2-cm-ppi }")

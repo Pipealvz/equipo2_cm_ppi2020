@@ -36,7 +36,7 @@ mysqlConnection.query('INSERT INTO pedido (documento, documento_formula, id_usua
     return console.error(err.message)
   }
   console.log(results);
-  res.json({ mensaje:`Pedido añadido <[:D-|-[ !!`})
+  res.json({ mensaje:`Pedido añadido !!`})
 })
 })
 
@@ -44,7 +44,7 @@ router.delete('/pedido/:id', (req, res) => {
   const { id } = req.params;
   mysqlConnection.query('DELETE FROM pedido WHERE id_pedido = ?', [id], (err, rows, fields) => {
     if(!err) {
-      res.json({status: 'Pedido eliminado <[(×(-|-[ !!'});
+      res.json({status: 'Pedido eliminado!!'});
     } else {
       console.log(err);
     }

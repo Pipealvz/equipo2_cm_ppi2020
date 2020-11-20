@@ -27,42 +27,43 @@ router.get('/usuario', (req, res) => {
   })
 
 // {  MÉTODO : "POST" }
- /* router.post('/usuario',(req,res)=>{
-    const {
-      correo,
-      contraseña,
-      nombre,
-      apellido,
-      rol
-  } = req.body
-    let dataUser = [
-    correo,
-    contraseña,
-    nombre,
-    apellido,
-    rol
-    ];
-  let newUser = 'INSERT INTO `usuario_cliente`(`correo`, `contraseña`, `nombre`, `apellido`, `rol`) VALUES (?,?,?,?,?)';
-  mysqlConnection.query(newUser,dataUser,(err, rows, fields)=>{
-        if (!err) {
-          return console.error(err.message)
-        } else {
-          res.json({mensaje: "Usuario añadido!! :)"})
-        }
-        console.log(rows)
-      })
-  })*/
+router.post('/usuario',(req,res)=>{
+  const {correo, contraseña, nombre, apellido, rol} = req.body;
+  let dataUser = [correo, contraseña, nombre, apellido, rol];
+mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, apellido) VALUES (?,?,?,?)',dataUser,(err, results, fields)=>{
+  if(err){
+    return console.error(err.message)
+  }
+  console.log(results);
+  res.json({ mensaje:`Registro exitoso!!`})
+})
+})
 
 // {  MÉTODO : "POST" }
-  router.post('/usuario',(req,res)=>{
+  /*router.post('/usuario',(req,res)=>{
    const {correo, contraseña, nombre, apellido, rol} = req.body;
   let newUser = [correo, contraseña, nombre, apellido, rol];
-  mysqlConnection.query('INSERT INTO pedido (documento, documento_formula, id_usuario, nombre_farmacia) VALUES (?,?,?,?)',(err, results, fields)=>{
+  mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, apellido, rol) VALUES (?,?,?,?,Usuario)',(err, results, fields)=>{
     if(!err){
       return console.error(err.message)
     }else{
-      res.json({message: "Pedido añadido!"})
+      console.log(results)
+      res.json({message: "Registro Exitoso!!"})
     }
   })
+})*/
+
+
+// {  MÉTODO:"DELETE" }
+
+router.delete('/usuario/:id',(req,res)=>{
+  const {id} = req.params;
+    mysqlConnection.query('DELETE FROM pedido WHERE id_usuario = ?',[id],(err, row, fields)=>{
+      if(!err){
+        res.json({status: "Usuario eliminado!!"})
+      }
+      res.status(502).json({mensaje:"Error en la consulta!!"})
+    })
 })
-  module.exports = router;
+
+module.exports = router;
