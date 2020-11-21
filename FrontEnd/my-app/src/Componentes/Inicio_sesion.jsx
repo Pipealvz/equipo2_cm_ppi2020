@@ -12,17 +12,18 @@ import axios from 'axios'
 
 
 export default function Inicio_sesion() {
-        const eventoRegistrar = ()=>{
+        const eventoRegistrar = (e)=>{
+        e.preventDefault();
         const loginUser = {
                 correo:"pipedim03@gmail.com",
                 contraseña:"felipealvarez"
         }
-        axios.post('https://baackendapp.herokuapp.com/api/usuario',loginUser)
-                .then( (res) => {
-                        console.log(res)
+        axios.post('https://baackendapp.herokuapp.com/api/usuario/login',loginUser)
+                .then( (response) => {
+                        console.log(response)
                 })
-                .catch((err)=>{
-                        console.log(err)
+                .catch((error)=>{
+                        console.log(error)
                 })
         }
         return (
@@ -34,7 +35,7 @@ export default function Inicio_sesion() {
                                                 <h1 className="text-center mt-4" id="Texto_inicio">Iniciar Sesión</h1>
                                                 <hr />
                                                 <br />
-                                                <form>
+                                                <form onSubmit={eventoRegistrar} method="post" name="Loginform">
                                                         <div className="form-group">
                                                                 <input
                                                                         type="email"
@@ -57,7 +58,7 @@ export default function Inicio_sesion() {
                                                                 <label for="password" className="form-label">Contraseña</label>
                                                         </div>
                                                         
-                                                                <button className=" btn btn-dark btn-block mt-0" onClick={eventoRegistrar} type="submit" id="btn_inicio">
+                                                                <button className=" btn btn-dark btn-block mt-0"  type="submit" id="btn_inicio">
                                                                         <strong>Iniciar sesión</strong>
                                                                 </button>
                                                                 <hr />

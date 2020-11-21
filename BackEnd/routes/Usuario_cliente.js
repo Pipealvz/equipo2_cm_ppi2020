@@ -42,7 +42,7 @@ mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, 
 router.post('/usuario/login',(req,res)=>{
   const {correo, contraseña} = req.body;
   let dataLogin = [correo, contraseña]
-  mysqlConnection.query('SELECT correo, contraseña FROM usuario_cliente',dataLogin,(err, row, fields)=>{
+  mysqlConnection.query('SELECT correo, contraseña FROM usuario_cliente WHERE correo = ? AND contraseña = ?',dataLogin,(err, row, fields)=>{
     if(!err){
       console.log(row)
       res.json(row)
