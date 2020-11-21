@@ -39,6 +39,18 @@ mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, 
 })
 })
 
+router.post('/usuario/login',(req,res)=>{
+  const {correo, contraseña} = req.body;
+  let dataLogin = [correo, contraseña]
+  mysqlConnection.query('SELECT correo, contraseña FROM usuario_cliente',dataLogin,(err, row, fields)=>{
+    if(!err){
+      console.log(row)
+      res.json(row)
+    }
+    res.status(401).json({mensaje:"Error al ingresar"})
+  })
+})
+
 // {  MÉTODO : "POST" }
   /*router.post('/usuario',(req,res)=>{
    const {correo, contraseña, nombre, apellido, rol} = req.body;
