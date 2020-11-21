@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
 import Navbar from './Navbar-btn';
 import '../Estilos/Ajustes_subs.css';
+import axios from 'axios'
+//import { Button, Form, Col } from "react-bootstrap";
 /*IMPORT-IMAGES*/
 
 export default class Ajustes_sub_mail extends React.Component {

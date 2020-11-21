@@ -1,6 +1,7 @@
 const express = require("express")
 const path = require("path")
 const morgan = require("morgan")
+const cors = require('cors')
 const app = express()
 require('dotenv').config()
 
@@ -16,6 +17,7 @@ app.get('/api',(req,res) => {
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.static('public'));
+app.use(cors())
 
 //Routes
 app.use("/api", require("./routes/Farmacias"))
