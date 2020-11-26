@@ -49,7 +49,7 @@ router.get('/farmacia/:id', (req, res) => {
 router.post('/farmacia',(req,res)=>{
 const {nombre, correo, contraseña, nit, rol} = req.body;
 let datafarmacia = [nombre, correo, contraseña, nit, rol];
-let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit, rol) VALUES (?,?,?,?,Farmacia)`;
+let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit) VALUES (?,?,?,?)`;
 mysqlConnection.query(newfarmacia, datafarmacia, (err, results, fields)=>{
   if(err){
     return console.error(err.message)
