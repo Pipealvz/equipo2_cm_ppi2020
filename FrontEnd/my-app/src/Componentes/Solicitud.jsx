@@ -15,9 +15,10 @@ export default class Solicitud extends React.Component{
         state = {
                 farmacia : []
         }
+
         async getFarmacia(){
                 const res = await axios.get('https://baackendapp.herokuapp.com/api/farmacia') 
-                console.log(res.data) // TEST DEL MÉTODO
+                //console.log(res.data) // TEST DEL MÉTODO
                 if(res){
                         this.setState({farmacia:res.data})
                 }
