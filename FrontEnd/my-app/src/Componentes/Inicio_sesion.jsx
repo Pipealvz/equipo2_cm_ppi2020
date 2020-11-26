@@ -1,6 +1,6 @@
 /*IMPORT-REACT*/
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React,{useState} from 'react';
+import { Link, useHistory } from 'react-router-dom'; //IMPORT useHistory
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-COMPONENTS*/
@@ -12,15 +12,18 @@ import axios from 'axios'
 
 
 export default function Inicio_sesion() {
+        const history = useHistory(); //DEFINIMOS useHistory
+        const [correo, setCorreo] = useState("");
+        const [clave, setPassword] = useState("");
         const eventoRegistrar = (e)=>{
         e.preventDefault();
         const loginUser = {
-                correo:"pipedim03@gmail.com",
-                contraseña:"felipealvarez"
+                correo:correo,
+                contraseña:clave
         }
-        axios.post('https://baackendapp.herokuapp.com/api/usuario/login',loginUser)
-                .then( (response) => {
-                        console.log(response)
+        axios.post('https://equipo2cmppi2020-2.felipealvarez8.repl.co/api/usuario/login',loginUser)
+                .then(()=> {
+                        history.push("Solicitud");
                 })
                 .catch((error)=>{
                         console.log(error)
@@ -44,6 +47,9 @@ export default function Inicio_sesion() {
                                                                         className="form-control"
                                                                         required
                                                                         placeholder="correo"
+                                                                        onChange={function({target}){
+                                                                                setCorreo(target.value);
+                                                                        }}
                                                                 />
                                                                 <label for="name" className="form-label">Correo</label>
                                                                 <br />
@@ -54,15 +60,18 @@ export default function Inicio_sesion() {
                                                                         className="form-control"
                                                                         required
                                                                         placeholder="contraseña"
+                                                                        onChange={function({target}){
+                                                                                setPassword(target.value);
+                                                                        }}
                                                                 />
                                                                 <label for="password" className="form-label">Contraseña</label>
                                                         </div>
-                                                        
+                                                        <Link id="link" to="/Solicitud">
                                                                 <button className=" btn btn-dark btn-block mt-0"  type="submit" id="btn_inicio">
                                                                         <strong>Iniciar sesión</strong>
                                                                 </button>
                                                                 <hr />
-                                                        
+                                                        </Link>
                                                         <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro">¡Registrate!</Link>
                                                         </span>
                                                 </form>

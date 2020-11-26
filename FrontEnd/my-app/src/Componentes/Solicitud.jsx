@@ -1,5 +1,5 @@
 /*IMPORT-REACT*/
-import React from 'react';
+import React, {useState} from 'react';
 import '../Estilos/Solicitud.css';
 /*IMPORT-BOOTSTRAP*/
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,9 +8,24 @@ import Footer from './Footer';
 import Navbar from './Navbar-btn';
 /*IMPORT-IMAGES*/
 import btn_form from '../Images_proyectos/btn-add-formula.png';
+import axios from 'axios';
 
-class Solicitud extends React.Component {
-        render() {
+export default class Solicitud extends React.Component{
+
+        state = {
+                farmacia : []
+        }
+        async getFarmacia(){
+                const res = await axios.get('https://baackendapp.herokuapp.com/api/farmacia') 
+                console.log(res.data) // TEST DEL MÉTODO
+                if(res){
+                        this.setState({farmacia:res.data})
+                }
+        }
+        async componentDidMount(){
+                await this.getFarmacia();
+        }
+                render(){
                 return (
                         <div className="App-s">
                                 <Navbar id="header_global"/>
@@ -21,12 +36,16 @@ class Solicitud extends React.Component {
                                                                 <h1 className="text-center" id="Texto_solicitud">Solicitudes</h1>
                                                                 <hr />
                                                                 <div className="mt-5"></div>
-                                                                <div class="row justify-content-center btn-group" id="btn-farm">
-                                                                        <select class="text-left col-11 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
+                                                                <div className="row justify-content-center btn-group" id="btn-farm">
+                                                                        <select className="text-left col-11 col-lg-11 btn btn-primary bg-light text-dark sub-item" id="dropmenu">
                                                                         <option className="sub-item-big" disabled selected>Seleccionar farmacia</option>
-                                                                                <option className="sub-item">Farmacia Rosales</option>
-                                                                                <option className="sub-item">Farmacia Athena SS</option>
-                                                                                <option className="sub-item" >Farmacia D2</option>
+                                                                        {
+                                                                                this.state.farmacia.map( farmacia =>(
+                                                                                <option className="sub-item">
+                                                                                                { farmacia.nombre }
+                                                                                </option>
+                                                                                ))
+                                                                        }
                                                                         </select>
                                                                 </div>
                                                                 <br/>
@@ -68,4 +87,3 @@ class Solicitud extends React.Component {
                 );
         }
 }
-export default Solicitud;
