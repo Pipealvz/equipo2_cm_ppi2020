@@ -46,8 +46,7 @@ router.get('/farmacia/:id', (req, res) => {
   });
   
 // {  MÉTODO : "POST" }
-router.post('/farmacia',(req,res)=>{
-<<<<<<< HEAD
+router.post('/farmacia/registro',(req,res)=>{
   const {nombre, correo, contraseña, nit, rol} = req.body;
   let datafarmacia = [nombre, correo, contraseña, nit, rol];
   let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit) VALUES (?,?,?,?)`;
@@ -58,18 +57,7 @@ router.post('/farmacia',(req,res)=>{
     res.json({ message:`Farmacia Creada!!`})
   })
   })
-=======
-const {nombre, correo, contraseña, nit, rol} = req.body;
-let datafarmacia = [nombre, correo, contraseña, nit, rol];
-let newfarmacia = `INSERT INTO farmacia (nombre, correo, contraseña, nit) VALUES (?,?,?,?)`;
-mysqlConnection.query(newfarmacia, datafarmacia, (err, results, fields)=>{
-  if(err){
-    return console.error(err.message)
-  }
-  res.json({ message:`Farmacia Creada!!`, })
-})
-})
->>>>>>> bb1c08e7970662a91c214d5be123f869f56af6ab
+
 
 // {  MÉTODO : "PUT"  }
 router.put('/farmacia/:id', (req, res) => {
