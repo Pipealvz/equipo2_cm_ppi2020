@@ -27,7 +27,7 @@ router.get('/usuario', (req, res) => {
   })
 
 // {  MÉTODO : "POST" }
-router.post('/usuario',(req,res)=>{
+router.post('/usuario/registro',(req,res)=>{
   const {correo, contraseña, nombre, apellido, rol} = req.body;
   let dataUser = [correo, contraseña, nombre, apellido, rol];
 mysqlConnection.query('INSERT INTO usuario_cliente(correo, contraseña, nombre, apellido) VALUES (?,?,?,?)',dataUser,(err, results, fields)=>{
