@@ -83,7 +83,7 @@ export default class web extends React.Component{
                                 <hr />
                             </form>
                             <span>¿Ya estás registrado como farmacia?</span>
-                            <Link to="/"> Inicia sesión </Link>
+                            <Link to="/Login.farmacia" id="link"> Inicia sesión </Link>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ export default class web extends React.Component{
             <div className="row col-4 text-white text-uppercase justify-content-center">
                 <span className="title1">Equipo de trabajo</span>
                 <div className="row">
-                    <div className="">                
+                    <div className="">
                     <form className="ml-5" action="https://github.com/Felipe-Alvarez/" target="_blank">
                         <button className="btn-social">
                             <div>

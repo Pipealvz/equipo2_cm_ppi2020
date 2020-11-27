@@ -17,6 +17,7 @@ import Notificacion_f from '../Farmacias/Notificaciones_f';
 import Ajustes_sub_name_f from '../Farmacias/Ajustes_sub_mail_farm';
 import Ajustes_sub_pass_f from '../Farmacias/Ajustes_sub_password_farm';
 import Ajustes_sub_mail_f from '../Farmacias/Ajustes_sub_mail_farm';
+import login from '../Farmacias/login_farm'
 /*IMPORT-SUB-COMPONENT*/
 import Ajustes_sub_name from '../Componentes/Ajustes_sub_name';
 import Ajustes_sub_pass from '../Componentes/Ajustes_sub_password';
@@ -50,6 +51,7 @@ export default function Rutas() {
                 <Route exact path="/Ajustes_f" component={Ajustes_f} />
                 <Route exact path="/Historial_f" component={Historial_f} />
                 <Route exact path="/Notificacion_f" component={Notificacion_f} />
+                <Route exact path="/login.farmacia" component={login}/>
 
                 <Route exact path="/_h" component={Inicio_festivo} />
                 <Route exact path="/Registro_h" component={Registro_festivo} />

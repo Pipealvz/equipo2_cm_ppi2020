@@ -23,7 +23,7 @@ class Ajustes_farm extends React.Component {
                                                                 <hr />
                                                                 <div className="mt-5"></div>
                                                                 <div class="mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Nombre: Androly-San <Link to="/Ajustes/Editar_nombre_farm"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
+                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Nombre: AthenaSS <Link to="/Ajustes/Editar_nombre_farm"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
                                                                 </div>
                                                                 <div className="mt-5"></div>
                                                                 <div class="mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
@@ -31,10 +31,10 @@ class Ajustes_farm extends React.Component {
                                                                 </div>
                                                                 <div className="mt-5"></div>
                                                                 <div class="mt-2 row justify-content-center mt-0 btn-group" id="btn-farm">
-                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Correo: Andy@correo.com <Link to="/Ajustes/Editar_correo_farm"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
+                                                                        <text type="summit" readonly="readonly" className="col-lg-11 col-11 btn btn-primary bg-light justify-content-between d-flex" id="text-box">Correo: AAthenaSS@gmail.com <Link to="/Ajustes/Editar_correo_farm"><button type="button" className="btn-edit"><img src={icon_edit} className="" /></button></Link></text>
                                                                 </div>
                                                                 <div className="mt-5"></div>
-                                                                <Link className="row justify-content-center mt-0"  id="btn_off" to="/">
+                                                                <Link className="row justify-content-center mt-0"  id="btn_off" to="/Login.farmacia">
                                                                         <button className="col-lg-10 col-10 btn btn-dark btn-block" type="submit">Cerrar Sesión</button>
                                                                 </Link>
                                                                 <div className="mb-5"></div>
