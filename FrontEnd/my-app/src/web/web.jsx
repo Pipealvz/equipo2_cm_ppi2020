@@ -103,7 +103,7 @@ export default class web extends React.Component{
                 <span>FELIPE ÁLVAREZ</span>
                 </div>
                 <div>                
-                <form className="ml-5" action="https://github.com/Felipe-Alvarez/equipo2_cm_ppi2020/projects" target="_blank">
+                <form className="ml-5" action="https://github.com/LilJuanjose" target="_blank">
                         <button className="btn-social">
                             <div>
                                 <img src={gitHub} />
