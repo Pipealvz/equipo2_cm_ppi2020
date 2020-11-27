@@ -14,16 +14,20 @@ export default class web extends React.Component{
     render(){
     return (
         <div className="appweb">
-        <nav class="navbar navbar-light align-self-center sticky-top bg-inverse" id="navbarweb">
-        <div class="row col-6">
+        <nav className="navbar navbar-light align-self-center sticky-top" id="navbarweb">
+        <div className="row col-6">
             <img src={logo_domiapp}  className="img-icon"/>
     </div>
-    <div class="row col-6 justify-content-end">
-        <button class="btn btn-primary" id="btn">Iniciar sesión</button>
+    <div className="row col-6 justify-content-end">
+        <button className="btn btn-primary" id="btn">Iniciar sesión</button>
+        <div className="mr-5"></div>
+        <button className="btn btn-primary" id="btn">Registro</button>
     </div>
     </nav>
-    <div className="container-fluid bg-primary" id="bg-web">
-
+    <div className="container-fluid" id="bg-web">
+        <div className="row-fluid d-flex justify-content-center" id="entrada">
+            <span className="align-self-center text-uppercase" id="spantitle">Bienvenidos a la web de <img src={logo_domiapp}/></span>
+        </div>
     </div>
     <div className="container-fluid" id="bg-web2">
 
