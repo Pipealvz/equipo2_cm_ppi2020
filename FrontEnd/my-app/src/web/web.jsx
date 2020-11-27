@@ -10,9 +10,10 @@ import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
 /*IMPORT AXIOS { GET, POST, PUT, DELETE }*/
 import axios from 'axios'
 
-export default function web() {
+export default class web extends React.Component{
+    render(){
     return (
-        <div className="App">
+        <div className="Appweb">
             <div className="container vh-100">
                 <nav class="navbar navbar-light align-self-center sticky-top bg-inverse" id="navbar">
                     <div class="row col-6">
@@ -27,4 +28,5 @@ export default function web() {
             </div>
         </div>
     )
+}
 }

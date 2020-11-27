@@ -24,6 +24,8 @@ import Ajustes_sub_mail from '../Componentes/Ajustes_sub_mail';
 /*FESTIVO*/
 import Inicio_festivo from '../Componentes_festivos/Inicio_sesion_halloween';
 import Registro_festivo from '../Componentes_festivos/Registro_halloween';
+/*WEB*/
+import web from '../web/web'
 
 export default function Rutas() {
     return (
@@ -51,6 +53,8 @@ export default function Rutas() {
 
                 <Route exact path="/_h" component={Inicio_festivo} />
                 <Route exact path="/Registro_h" component={Registro_festivo} />
+
+                <Route exact path='/registro.farmacia' component={web}/>
             </Switch>
         </BrowserRouter>
     )
