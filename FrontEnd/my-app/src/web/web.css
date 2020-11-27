@@ -49,3 +49,102 @@
 #entrada{
     height: 50%;
 }
+#entrada2{
+    height: 100%;
+    text-align: left;
+}
+
+#Bloque_registro{height: 60%;}
+  #Texto_registro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    color: rgba(95, 97, 100, 0.719);
+    display: flex;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
+
+#input_Password{
+    background-color: white;
+    width: 100%;
+    height: 100%; 
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 0px;
+    transition: all .3s;
+  }
+  #input_Email{
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    margin-bottom: 0px;
+    transition: all .3s;
+  }
+  #input_Name{
+    background-color: white;
+    border: none;
+    width: 100%; 
+    height: 100%;
+    border-bottom: 1px solid;
+    margin-bottom: 0px;
+    transition: all .3s;
+  }
+  /*INPUT-ZONE-END*/
+  /*INPUT-EFECT-ZONE*/
+  .label{
+    font-size: medium;
+    opacity: 1;
+    color: gray;
+    transform: translateY(-1.5em);
+    transform-origin: 0 0;
+    transition: all .3s;
+  }
+  .form-control:focus + .label,
+  .form-control:not(:placeholder-shown) + .label
+  {
+    transform: translateY(-2.6em) scale(.8);
+    color: rgb(28, 117, 241);
+  }
+  .form-control::placeholder{
+    color: transparent;
+  }
+  .form-control:valid:focus{
+    border-color: green;
+  }
+  .form-control:invalid:focus{
+    border-color: red;
+  }
+  /*INPUT-EFECT-ZONE-END*/
+  .Link_sesion{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+  }
+  #btn_registrar{
+    border-radius: 5px;
+    color: whitesmoke;
+  }
+  #link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #footerweb{
+      width: 100%;
+      height: 25vmax;
+      background-color: rgb(58, 58, 58);
+  }
+
+  #foot1{
+      text-align: justify;
+      margin-left: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: medium;
+      font-weight: 0px;
+  }.title1{
+      transform: translateY(2em);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: larger;
+  }
