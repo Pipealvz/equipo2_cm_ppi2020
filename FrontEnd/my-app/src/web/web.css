@@ -3,7 +3,7 @@
 }
 
 #bg-web{
-    background-image: url(images/bg-web.jpg);
+    background-image: url(images/bg-web.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -12,8 +12,11 @@
 }
 
 #bg-web2{
-    background-image: url(images/bg-web2.jpg);
-    height: auto;
+    background-image: url(images/bg-web2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
     width: 100%;
 }
 

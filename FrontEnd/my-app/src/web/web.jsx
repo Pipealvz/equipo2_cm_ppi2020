@@ -26,9 +26,10 @@ export default class web extends React.Component{
     </nav>
     <div className="container-fluid" id="bg-web">
         <div className="row-fluid d-flex justify-content-center" id="entrada">
-            <span className="align-self-center text-uppercase" id="spantitle">Bienvenidos a la web de <img src={logo_domiapp}/></span>
+            <span className="align-self-center text-uppercase" id="spantitle">Bienvenidos a la web de <img src={logo_domiapp}/> </span>
         </div>
     </div>
+    <div className="mt-2"></div>
     <div className="container-fluid" id="bg-web2">
 
     </div>
