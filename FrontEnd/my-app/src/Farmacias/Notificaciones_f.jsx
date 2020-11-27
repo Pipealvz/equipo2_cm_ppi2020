@@ -20,7 +20,7 @@ class Notificaciones_f extends React.Component {
                             <h1 className="text-center" id="Texto_solicitud">Notificaciones</h1>
                             <hr />
                             <div className="col-12 col-lg-12 text-justify" id="bandeja_not">
-                                <p clasName="title-not">Alejandro García</p>
+                                <p clasName="title-not">Androly-San</p>
                                 <p className="text-farm">¡Ha hecho una solicitud de pedido! no lo dejes sin medicamentos.</p>
                             </div>
                             <div className="mt-5"></div>

@@ -76,7 +76,7 @@ export default function Inicio_sesion() {
                                                                 </button>
                                                                 <hr />
                                                         </Link>
-                                                        <span className="link-registro">¿No tienes cuenta? <Link id="link" to="/Registro">¡Registrate!</Link>
+                                                        <span className="link-registro">¿No tienes cuenta de usuario? <Link id="link" to="/Registro">¡Registrate!</Link>
                                                         </span>
                                                         <div className="row"></div>
                                                         <span className="link-registro">¿Eres una farmacia? <Link id="link" to="/Login.farmacia">¡Inicia sesión!</Link>

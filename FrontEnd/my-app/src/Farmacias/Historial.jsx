@@ -31,7 +31,7 @@ class Historial extends React.Component {
                                 <div className="mt-1 col-12 col-lg-12" id="Bloque_Historial">
                                     <br />
                                     <div className="col-lg-12 col-md-12 col-sm-6">
-                                    <Card className="text" time="Fecha: 12/02/2019" farm="Farmacia: Athena SS" data={this.state.data} />
+                                    <Card className="text" time="Fecha: 12/02/2019" farm="Usuario: Androly-San" data={this.state.data} />
                                     </div>
                                     <h6>
                                     </h6>
