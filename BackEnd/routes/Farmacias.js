@@ -58,7 +58,6 @@ router.post('/farmacia/registro',(req,res)=>{
   })
   })
 
-
 // {  MÉTODO : "PUT"  }
 router.put('/farmacia/:id', (req, res) => {
   const {nombre, correo, contraseña, nit, rol} = req.body;

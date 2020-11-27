@@ -31,7 +31,7 @@ export default class Footer extends React.Component {
                             <div className="collapse" id="collapseExample1">
                                 <div className="card card-body">
                                     <div className="row justify-content-around">
-                                        <form action="https://discord.gg/N4xBDFH9" target="_blank">
+                                        <form action="https://discord.gg/aQ7RnVMZGJ" target="_blank">
                                             <button type="summit" className="btn-social">
                                                 <div>
                                                     <img src={discord} />

@@ -7,8 +7,72 @@ import '../Estilos/Registro.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 /*IMPORT-IMAGES*/
 import logo_domiapp from '../Images_proyectos/Logo_domiApp.png';
+/*IMPORT AXIOS { GET, POST, PUT, DELETE }*/
+import axios from 'axios'
+
+const url = "https://baackendapp.herokuapp.com/api/usuario/registro";
 class Registro extends React.Component {
+
+    state = {
+        usuario: [], //DEFINIMOS EL ESTADO DONDE SE ALMACENAN LAS VARIABLES, O SEA DESPUÉS DEL API/:STATE
+        form:{
+            nombre:"",
+            correo:"",
+            contraseña:""
+        }
+    }
+
+    peticionPost = async () => {
+        await axios
+          .post(`${url}nuevo-estudiante`, this.state.form)
+          .then((response) => {
+            this.showModal();
+            this.peticionGet();
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
+      };
+
+    /*async getUser(){
+        const res = await axios.get('https://baackendapp.herokuapp.com/api/usuario')
+        this.setState('getAxios')
+    }
+    async postUsuario() { 
+        const res = await axios.post('https://baackendapp.herokuapp.com/api/usuario/registro', this.state.form)
+        .then((res)=>{this.getUser()})
+        .catch((error)=>{console.log(error)})
+    }
+
+    async componentDidMount(){
+        await this.postUsuario();
+    }
+
+    handleChange = async (e) => {
+        await this.setState({
+          form: {
+            ...this.state.form,
+            [e.target.name]: e.target.value
+          }
+        });
+        console.log(this.state.form);
+      };*/
+      /*submitCheck = () => {
+   
+        if(!this.state.nombre){
+          alert("Falta 1.")
+        } else if(this.state.direccion){
+          alert("Falta 2.")
+        } else if (!this.state.numero) {
+               alert("Falta 3.")
+       
+        } else {
+          alert("Bienvenido.")
+
+        }
+     }*/
     render() {
+    const { form } = this.state;
         return (
             <div className="App-r">
                 <div className="container vh-100" id="container">
@@ -18,7 +82,7 @@ class Registro extends React.Component {
                             <h1 className="text-center mt-4" id="Texto_registro">Registro</h1>
                             <hr />
                             <br />
-                            <form>
+                            <form onSubmit={this.postUsuario} >
                                 <div className="form-group">
                                     <input
                                         type="name"
@@ -27,6 +91,8 @@ class Registro extends React.Component {
                                         className="form-control"
                                         required
                                         placeholder="Nombre"
+                                        onChange={this.handleChange}
+                                        value={this.state.form ? this.state.form.nombre:""}                                       
                                     />
                                     <label className="label">Nombre</label>
                                     <input
@@ -36,6 +102,8 @@ class Registro extends React.Component {
                                         className="form-control"
                                         required
                                         placeholder="Correo"
+                                        onChange={this.handleChange}
+                                        value={this.state.form ? this.state.form.correo:""}
                                     />
                                     <label className="label">Correo</label>
                                     <input
@@ -45,6 +113,8 @@ class Registro extends React.Component {
                                         className="form-control"
                                         required
                                         placeholder="Contraseña"
+                                        onChange={this.handleChange}
+                                        value={form.contraseña.value}
                                     />
                                     <label className="label">Contraseña</label>
                                 </div>

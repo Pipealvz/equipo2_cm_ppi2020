@@ -5,7 +5,13 @@
   background-position: center center;
   background-size: cover; 
   text-align: center;
+}@media(max-width: 990px){
+  .App-r{
+    background: rgba(75, 75, 75, 0.699);
+    text-align: center;
+  }
 }
+
 .Text_info{
   display: block;
   text-align: justify;

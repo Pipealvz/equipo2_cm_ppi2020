@@ -12,6 +12,7 @@ import axios from 'axios'
 
 
 export default function Inicio_sesion() {
+
         const history = useHistory(); //DEFINIMOS useHistory
         const [correo, setCorreo] = useState("");
         const [clave, setPassword] = useState("");
@@ -23,7 +24,10 @@ export default function Inicio_sesion() {
         }
         axios.post('https://equipo2cmppi2020-2.felipealvarez8.repl.co/api/usuario/login',loginUser)
                 .then(()=> {
-                        history.push("Solicitud");
+                        if(eventoRegistrar === correo,clave){
+                                history.push("Solicitud");
+                        }
+                        alert('Lo siento, algo anda mal :/')
                 })
                 .catch((error)=>{
                         console.log(error)
