@@ -1,0 +1,19 @@
+.appweb{
+    text-align: center;
+}
+
+#bg-web{
+    background-image: url(images/bg-web.jpg);
+    height: auto;
+    width: 100%;
+}
+
+#bg-web2{
+    background-image: url(images/bg-web2.jpg);
+    height: auto;
+    width: 100%;
+}
+
+#navbarweb{
+    background-color: rgba(0, 0, 0, 0.911);
+}
