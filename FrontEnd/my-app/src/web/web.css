@@ -54,8 +54,8 @@
     text-align: left;
 }
 
-#Bloque_registro{height: 60%;}
-  #Texto_registro{
+#Bloque{height: 70%; background-color: white;}
+  #Tro{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     color: rgba(95, 97, 100, 0.719);
@@ -65,7 +65,7 @@
     font-size: x-large;
   }
 
-#input_Password{
+#ip{
     background-color: white;
     width: 100%;
     height: 100%; 
@@ -74,7 +74,7 @@
     margin-bottom: 0px;
     transition: all .3s;
   }
-  #input_Email{
+  #ie{
     background-color: white;
     border: none;
     width: 100%;
@@ -83,7 +83,7 @@
     margin-bottom: 0px;
     transition: all .3s;
   }
-  #input_Name{
+  #in{
     background-color: white;
     border: none;
     width: 100%; 

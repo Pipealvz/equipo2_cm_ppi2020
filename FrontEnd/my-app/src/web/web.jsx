@@ -35,48 +35,55 @@ export default class web extends React.Component{
     {/*SEGUNDA PARTE MI WACHIN*/}
     <div className="container-fluid" id="bg-web2">
     <div className="row-fluid d-flex justify-content-start" id="entrada2">
-    <div className="col-12 col-lg-4 ml-5 align-self-center" id="Bloque_registro">
-    <h1 className="text-center mt-4" id="Texto_registro">Registro de farmacia</h1>
+    <div className="col-12 col-lg-4 ml-5 align-self-center" id="Bloque">
+    <h1 className="text-center mt-4" id="Tro">Registro de farmacia</h1>
     <form>
     <div className="mt-5"></div>
                                 <div className="form-group">
                                     <input
                                         type="name"
                                         name="nombre"
-                                        id="input_Name"
+                                        id="in"
                                         className="form-control"
                                         required
                                         placeholder="Nombre"                                      
                                     />
-                                    <label className="label">Nombre</label>
-                                    <div className="mt-3"></div>
+                                    <label className="label">Nombre farmacia</label>
                                     <input
                                         type="email"
                                         name="correo"
-                                        id="input_Email"
+                                        id="ie"
                                         className="form-control"
                                         required
                                         placeholder="Correo"
                                     />
-                                    <label className="label">Correo</label>
-                                    <div className="mt-3"></div>
+                                    <label className="label">Correo farmacia</label>
+                                    <input
+                                        type="int"
+                                        name="nit"
+                                        id="ie"
+                                        className="form-control"
+                                        required
+                                        placeholder="NIT"
+                                    />
+                                    <label className="label">NIT</label>
                                     <input
                                         type="password"
                                         name="contrasena"
-                                        id="input_Password"
+                                        id="ip"
                                         className="form-control"
                                         required
                                         placeholder="Contraseña"
                                     />
                                     <label className="label">Contraseña</label>
-                                    <div className="mt-3"></div>
                                 </div>
-                                <div className="mt-5"></div>
                                 <button className="btn btn-block mt-4 btn-primary" type="submit" id="btn_registrar">
-                                    <strong>Crear cuenta</strong>
+                                    <strong>Registrar farmacia</strong>
                                 </button>
                                 <hr />
                             </form>
+                            <span>¿Ya estás registrado como farmacia?</span>
+                            <Link to="/"> Inicia sesión </Link>
                     </div>
                 </div>
             </div>
